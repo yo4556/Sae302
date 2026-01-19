@@ -1,5 +1,32 @@
 header {
-  background-color: #343232;
+  background-color: #7A1CAC;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FEFBFF;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background-color: #7A1CAC;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */

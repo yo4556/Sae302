@@ -8,5 +8,10 @@ $violet-sombre: #1C0426;
 
 
 header{
-    background-color: $dark-background-color;
+    background-color: $violet-clair;
+}
+
+nav ul{
+   display: flex; 
+   justify-content: space-around;
 }
