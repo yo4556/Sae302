@@ -1,7 +1,5 @@
-.center_f{
-    display: flex;
-    justify-content: center;
-    color: $white;
+main{
+    margin-top: 15vh;
 }
 
 main p{
@@ -9,6 +7,12 @@ main p{
     justify-self: center;
     width: 60%;
     text-align: justify;
+}
+
+.center_f{
+    display: flex;
+    justify-content: center;
+    color: $white;
 }
 
 iframe{
