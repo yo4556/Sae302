@@ -1,3 +1,7 @@
+body {
+  background-color: #2E073F;
+}
+
 header {
   display: flex;
   position: fixed;
@@ -59,6 +63,10 @@ li {
   list-style: none;
 }
 
+body {
+  background-color: #2E073F;
+}
+
 header {
   display: flex;
   position: fixed;
@@ -104,6 +112,28 @@ header nav ul li a:hover {
 
 body {
   min-height: 200vh;
+}
+
+.center_f {
+  display: flex;
+  justify-content: center;
+  color: #FEFBFF;
+}
+
+main p {
+  display: flex;
+  justify-self: center;
+  width: 60%;
+  text-align: justify;
+}
+
+iframe {
+  display: flex;
+  justify-self: center;
+  width: 80%;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  border: solid #a90567 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
