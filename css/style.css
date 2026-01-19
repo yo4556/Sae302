@@ -1,14 +1,53 @@
 header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 10px 10px;
+  transition: all 0.5s ease-in-out;
   background-color: #7A1CAC;
+  width: 100%;
+  padding: 0.7rem;
+  justify-content: space-around;
 }
-
-nav ul {
+header nav {
+  width: 80%;
+}
+header nav ul {
   display: flex;
   justify-content: space-around;
+  gap: 1.5rem;
+}
+header nav ul li a {
+  display: block;
+  padding: 1vh 1.5vw;
+  border-radius: 20px;
+  background-color: #AD49E1;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+header nav ul li a:hover {
+  background-color: #1C0426;
+  transform: translateY(-2px);
+}
+
+.sticky {
+  transition: all 0.5s ease-in-out;
+  width: 80%;
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  border-radius: 50px;
 }
 
 body {
+  min-height: 200vh;
+}
+
+* {
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -21,12 +60,50 @@ li {
 }
 
 header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 10px 10px;
+  transition: all 0.5s ease-in-out;
   background-color: #7A1CAC;
+  width: 100%;
+  padding: 0.7rem;
+  justify-content: space-around;
 }
-
-nav ul {
+header nav {
+  width: 80%;
+}
+header nav ul {
   display: flex;
   justify-content: space-around;
+  gap: 1.5rem;
+}
+header nav ul li a {
+  display: block;
+  padding: 1vh 1.5vw;
+  border-radius: 20px;
+  background-color: #AD49E1;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+header nav ul li a:hover {
+  background-color: #1C0426;
+  transform: translateY(-2px);
+}
+
+.sticky {
+  transition: all 0.5s ease-in-out;
+  width: 80%;
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  border-radius: 50px;
+}
+
+body {
+  min-height: 200vh;
 }
 
 /*# sourceMappingURL=style.css.map */

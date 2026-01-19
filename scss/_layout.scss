@@ -7,11 +7,53 @@ $violet: #2E073F;
 $violet-sombre: #1C0426;
 
 
-header{
-    background-color: $violet-clair;
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 10px 10px;
+  transition: all 0.5s ease-in-out;
+  background-color: $violet-clair;
+  width: 100%;
+  padding: 0.7rem;
+  justify-content: space-around;
+
+  nav {
+    width: 80%;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      gap: 1.5rem;
+      li {
+        a {
+          display: block;
+          padding: 1vh 1.5vw;
+          border-radius: 20px;
+          background-color: $violet-tres-clair;
+          font-size: 1.1rem;
+          transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+          &:hover {
+            background-color: $violet-sombre;
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+  }
+}
+.sticky{
+  transition: all 0.5s ease-in-out;
+  width: 80%;
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  border-radius: 50px;
 }
 
-nav ul{
-   display: flex; 
-   justify-content: space-around;
+
+
+body{
+  min-height: 200vh;
 }
