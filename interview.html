@@ -1,20 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webdocumentaire</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    <a href="#main"><div id="fleche_div">
-            <img id="fleche" src="img/fleche-12.png" alt="fleche">
-        </div></a>
+    <a href="#">
+        <div id="fleche_div">
+            <svg id="circle" width="50" height="50">
+                <circle cx="25" cy="25" r="22" stroke="#ccc" stroke-width="4" fill="none" />
+                <circle id="progress" cx="25" cy="25" r="22" stroke="#AD49E1" stroke-width="4" fill="none"
+                    stroke-dasharray="138" stroke-dashoffset="138" transform="rotate(-90 25 25)" />
+            </svg>
+            <img id="fleche" src="img/arrow.svg" alt="fleche" />
+        </div>
+    </a>
     <div>
-     <div class="wave"></div>
-     <div class="wave"></div>
-     <div class="wave"></div>
-  </div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
     <header id="header">
         <nav>
             <ul>
@@ -28,14 +37,29 @@
     </header>
     <main id="main">
         <h1 class="center_f">Our interview</h1>
-        <p class="center_f">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa consequatur nemo voluptas omnis doloremque odio quos soluta? Consequatur enim quas fugiat commodi eos reiciendis accusamus cum, optio, maiores sed velit? Culpa consequatur nemo voluptas omnis doloremque odio quos soluta? Consequatur enim quas fugiat commodi eos reiciendis accusamus cum, optio, maiores?</p>
+        <p class="center_f">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+            consequatur nemo voluptas omnis doloremque odio quos soluta? Consequatur
+            enim quas fugiat commodi eos reiciendis accusamus cum, optio, maiores
+            sed velit? Culpa consequatur nemo voluptas omnis doloremque odio quos
+            soluta? Consequatur enim quas fugiat commodi eos reiciendis accusamus
+            cum, optio, maiores?
+        </p>
         <h1 class="center_f">Listen to an Expert</h1>
         <h1 class="center_f">v</h1>
-        <iframe src="https://www.youtube.com/embed/EBgzNhHLTmA?si=428Qfkt442D_F2Pa&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/EBgzNhHLTmA?si=428Qfkt442D_F2Pa&amp;controls=0"
+            title="YouTube video player" frameborder="0" allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        " referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </main>
     <script src="js/script.js"></script>
-    <footer>
-        
-    </footer>
+    <footer></footer>
 </body>
+
 </html>
