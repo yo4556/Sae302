@@ -1,29 +1,27 @@
-body {
-  background-color: #2E073F;
-}
-
 header {
   display: flex;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 0 0 10px 10px;
-  transition: all 0.5s ease-in-out;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.9s ease-in-out;
   background-color: #7A1CAC;
   width: 100%;
   padding: 0.7rem;
   justify-content: space-around;
 }
-header nav {
+
+nav {
   width: 80%;
 }
-header nav ul {
+
+ul {
   display: flex;
   justify-content: space-around;
   gap: 1.5rem;
 }
-header nav ul li a {
+ul li a {
   display: block;
   padding: 1vh 1.5vw;
   border-radius: 20px;
@@ -31,7 +29,7 @@ header nav ul li a {
   font-size: 1.1rem;
   transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
 }
-header nav ul li a:hover {
+ul li a:hover {
   background-color: #1C0426;
   transform: translateY(-2px);
 }
@@ -43,15 +41,106 @@ header nav ul li a:hover {
   top: 3%;
   left: 50%;
   border-radius: 50px;
+  opacity: 100%;
+  opacity: 0%;
 }
 
 body {
   min-height: 200vh;
 }
 
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, #2E073F 7%, #2E073F 38%, #2E073F 68%);
+  animation: gradient 25s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.wave {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+}
+footer {
+  width: 100%;
+  display: flex;
+}
+
+#fleche_div {
+  width: 50px;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  background-color: #EBD3F8;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+}
+
+#fleche {
+  transform: rotate(-90deg);
+  width: 30px;
+  aspect-ratio: 9/12;
+  margin-bottom: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -63,32 +152,30 @@ li {
   list-style: none;
 }
 
-body {
-  background-color: #2E073F;
-}
-
 header {
   display: flex;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 0 0 10px 10px;
-  transition: all 0.5s ease-in-out;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.9s ease-in-out;
   background-color: #7A1CAC;
   width: 100%;
   padding: 0.7rem;
   justify-content: space-around;
 }
-header nav {
+
+nav {
   width: 80%;
 }
-header nav ul {
+
+ul {
   display: flex;
   justify-content: space-around;
   gap: 1.5rem;
 }
-header nav ul li a {
+ul li a {
   display: block;
   padding: 1vh 1.5vw;
   border-radius: 20px;
@@ -96,7 +183,7 @@ header nav ul li a {
   font-size: 1.1rem;
   transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
 }
-header nav ul li a:hover {
+ul li a:hover {
   background-color: #1C0426;
   transform: translateY(-2px);
 }
@@ -108,10 +195,97 @@ header nav ul li a:hover {
   top: 3%;
   left: 50%;
   border-radius: 50px;
+  opacity: 100%;
+  opacity: 0%;
 }
 
 body {
   min-height: 200vh;
+}
+
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, #2E073F 7%, #2E073F 38%, #2E073F 68%);
+  animation: gradient 25s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.wave {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+}
+footer {
+  width: 100%;
+  display: flex;
+}
+
+#fleche_div {
+  width: 50px;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  background-color: #EBD3F8;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+}
+
+#fleche {
+  transform: rotate(-90deg);
+  width: 30px;
+  aspect-ratio: 9/12;
+  margin-bottom: 2px;
 }
 
 main {
