@@ -1,9 +1,12 @@
 <?php
-include("autres_pages/header.php");
-echo"<title>Social</title>";
+include("autres_pages/head.php");
+?>
+<title>Social</title>
+</head>
+<body id="social">
+<?php
 include("autres_pages/menu.php");
 ?>
-
 <main>
 
 </main>

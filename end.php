@@ -1,9 +1,12 @@
 <?php
-include("autres_pages/header.php");
-echo"<title>The end</title>";
+include("autres_pages/head.php");
+?>
+<title>The end</title>
+</head>
+<body id="end">
+<?php
 include("autres_pages/menu.php");
 ?>
-
 <main>
 
 </main>

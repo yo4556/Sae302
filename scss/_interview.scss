@@ -1,25 +1,27 @@
-main{
+#interview {
+  main {
     margin-top: 15vh;
-}
+  }
 
-main p{
+  main p {
     display: flex;
     justify-self: center;
     width: 60%;
     text-align: justify;
-}
+  }
 
-.center_f{
+  .center_f {
     display: flex;
     justify-content: center;
     color: $white;
-}
+  }
 
-iframe{
+  iframe {
     display: flex;
     justify-self: center;
     width: 80%;
     aspect-ratio: 16/9;
     border-radius: 10px;
     border: solid #a90567 2px;
+  }
 }

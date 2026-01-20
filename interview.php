@@ -1,9 +1,12 @@
 <?php
-include("autres_pages/header.php");
-echo"<title>Interview</title>";
+include("autres_pages/head.php");
+?>
+<title>Interview</title>
+</head>
+<body id="interview">
+<?php
 include("autres_pages/menu.php");
 ?>
-
 <main id="main">
     <h1 class="center_f">Our interview</h1>
     <p class="center_f">

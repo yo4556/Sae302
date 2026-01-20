@@ -1,49 +1,47 @@
 $dark-background-color: #020003;
-$white: #FEFBFF;
-$violet-Pale: #EBD3F8;
-$violet-tres-clair: #AD49E1;
-$violet-clair: #7A1CAC;
-$violet: #2E073F;
-$violet-sombre: #1C0426;
-
+$bg-grey: #151515;
+$white: #fefbff;
+$violet-Pale: #ebd3f8;
+$violet-tres-clair: #ad49e1;
+$violet-clair: #7a1cac;
+$violet: #2e073f;
+$violet-sombre: #1c0426;
 
 header {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 0 0 5px 5px;
-  transition: all 0.9s ease-in-out;
-  background-color: $violet-clair;
-  width: 100%;
-  padding: 0.7rem;
-  justify-content: space-around;
-}
   nav {
-    width: 80%;
-      
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border: 2px solid $white;
+    border-radius: 50px;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 15px;
     }
-
     ul {
       display: flex;
-      justify-content: space-around;
-      gap: 1.5rem;
-      li {
-        a {
-          display: block;
-          padding: 1vh 1.5vw;
-          border-radius: 20px;
-          background-color: $violet-tres-clair;
-          font-size: 1.1rem;
-          transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
-          &:hover {
-            background-color: $violet-sombre;
-            transform: translateY(-2px);
-          }
+      gap: 40px;
+      a {
+        color: $white;
+        font-size: 1.2em;
+        font-weight: bold;
+        &:active,
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
+  }
+}
+/*
 .sticky{
   transition: all 0.5s ease-in-out;
   width: 80%;
@@ -54,85 +52,81 @@ header {
   opacity: 100%;
   opacity: 0%;
 }
-
-
-
-body{
-  min-height: 200vh;
-}
-
+*/
 body {
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(315deg, $violet 7%, $violet 38%, $violet 68%);
-    animation: gradient 25s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: $bg-grey;
+  animation: gradient 25s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 .wave {
-    background: rgb(255 255 255 / 25%);
-    border-radius: 1000% 1000% 0 0;
-    position: fixed;
-    width: 200%;
-    height: 12em;
-    animation: wave 10s -3s linear infinite;
-    transform: translate3d(0, 0, 0);
-    opacity: 0.8;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
+  background: #7a1cac40;
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .wave:nth-of-type(2) {
-    bottom: -1.25em;
-    animation: wave 18s linear reverse infinite;
-    opacity: 0.8;
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
 }
 
 .wave:nth-of-type(3) {
-    bottom: -2.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.9;
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
 }
 
 @keyframes wave {
-    2% {
-        transform: translateX(1);
-    }
+  2% {
+    transform: translateX(1);
+  }
 
-    25% {
-        transform: translateX(-25%);
-    }
+  25% {
+    transform: translateX(-25%);
+  }
 
-    50% {
-        transform: translateX(-50%);
-    }
+  50% {
+    transform: translateX(-50%);
+  }
 
-    75% {
-        transform: translateX(-25%);
-    }
+  75% {
+    transform: translateX(-25%);
+  }
 }
 
-footer{
+footer {
   width: 100%;
   display: flex;
 }
 
-#fleche_div{
+#fleche_div {
   width: 70px;
   height: 70px;
   position: fixed;
@@ -143,7 +137,7 @@ footer{
   align-items: center;
 }
 
-#fleche{
+#fleche {
   width: 30px;
   height: auto;
   transform: rotate(-180deg);

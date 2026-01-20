@@ -1,7 +1,3 @@
-<link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
 <a href="#">
     <div id="fleche_div">
         <svg id="circle" width="50" height="50">
@@ -17,14 +13,18 @@
     <div class="wave"></div>
     <div class="wave"></div>
 </div>
+
 <header id="header">
     <nav>
+        <div>
+            <img src="img/note.svg" alt="">
+            <h1>Webdocumentary</h1>
+        </div>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="social.html">Social</a></li>
-            <li><a href="interview.html">Expert View</a></li>
-            <li><a href="game.html">Game</a></li>
-            <li><a href="end.html">End</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="social.php">Social</a></li>
+            <li><a href="interview.php">Expert View</a></li>
+            <li><a href="game.php">Game</a></li>
+            <li><a href="end.php">End</a></li>
         </ul>
     </nav>
-</header>

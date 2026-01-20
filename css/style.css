@@ -1,40 +1,37 @@
-header {
-  display: flex;
+header nav {
   position: fixed;
-  top: 0;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 0 0 5px 5px;
-  transition: all 0.9s ease-in-out;
-  background-color: #7A1CAC;
-  width: 100%;
-  padding: 0.7rem;
-  justify-content: space-around;
-}
-
-nav {
-  width: 80%;
-}
-
-ul {
+  width: 90%;
+  border: 2px solid #fefbff;
+  border-radius: 50px;
+  color: #fefbff;
   display: flex;
-  justify-content: space-around;
-  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
 }
-ul li a {
-  display: block;
-  padding: 1vh 1.5vw;
-  border-radius: 20px;
-  background-color: #AD49E1;
-  font-size: 1.1rem;
-  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+header nav div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
-ul li a:hover {
-  background-color: #1C0426;
-  transform: translateY(-2px);
+header nav ul {
+  display: flex;
+  gap: 40px;
+}
+header nav ul a {
+  color: #fefbff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+header nav ul a:active, header nav ul a:hover {
+  text-decoration: underline;
 }
 
-.sticky {
+/*
+.sticky{
   transition: all 0.5s ease-in-out;
   width: 80%;
   position: fixed;
@@ -44,16 +41,12 @@ ul li a:hover {
   opacity: 100%;
   opacity: 0%;
 }
-
-body {
-  min-height: 200vh;
-}
-
+*/
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
-  background: linear-gradient(315deg, #2E073F 7%, #2E073F 38%, #2E073F 68%);
+  background: #151515;
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
@@ -71,7 +64,7 @@ body {
   }
 }
 .wave {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(122, 28, 172, 0.2509803922);
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
@@ -144,50 +137,47 @@ html {
 
 a {
   text-decoration: none;
-  color: #FEFBFF;
+  color: #fefbff;
 }
 
 li {
   list-style: none;
 }
 
-header {
-  display: flex;
+header nav {
   position: fixed;
-  top: 0;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 0 0 5px 5px;
-  transition: all 0.9s ease-in-out;
-  background-color: #7A1CAC;
-  width: 100%;
-  padding: 0.7rem;
-  justify-content: space-around;
-}
-
-nav {
-  width: 80%;
-}
-
-ul {
+  width: 90%;
+  border: 2px solid #fefbff;
+  border-radius: 50px;
+  color: #fefbff;
   display: flex;
-  justify-content: space-around;
-  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
 }
-ul li a {
-  display: block;
-  padding: 1vh 1.5vw;
-  border-radius: 20px;
-  background-color: #AD49E1;
-  font-size: 1.1rem;
-  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+header nav div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
-ul li a:hover {
-  background-color: #1C0426;
-  transform: translateY(-2px);
+header nav ul {
+  display: flex;
+  gap: 40px;
+}
+header nav ul a {
+  color: #fefbff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+header nav ul a:active, header nav ul a:hover {
+  text-decoration: underline;
 }
 
-.sticky {
+/*
+.sticky{
   transition: all 0.5s ease-in-out;
   width: 80%;
   position: fixed;
@@ -197,16 +187,12 @@ ul li a:hover {
   opacity: 100%;
   opacity: 0%;
 }
-
-body {
-  min-height: 200vh;
-}
-
+*/
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
-  background: linear-gradient(315deg, #2E073F 7%, #2E073F 38%, #2E073F 68%);
+  background: #151515;
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
@@ -224,7 +210,7 @@ body {
   }
 }
 .wave {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(122, 28, 172, 0.2509803922);
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
@@ -286,24 +272,103 @@ footer {
   position: absolute;
 }
 
-main {
+#index header {
+  min-height: 100vh;
+  background-image: url("/img/heroimage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#index header #title_index {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+#index header #title_index h1 {
+  font-family: Impact, sans-serif;
+  font-weight: normal;
+  font-size: 6em;
+}
+#index header #title_index h3 {
+  font-family: "Inria Serif", serif;
+  font-size: 4em;
+}
+#index main {
+  min-height: 70vh;
+}
+#index main section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#index main section > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+#index main section > div:first-child p {
+  font-family: "Inria Serif", serif;
+  width: 70%;
+  text-align: justify;
+  color: #fefbff;
+}
+#index main section > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#index main section > div:last-child > div {
+  width: 70%;
+  height: 30%;
+  padding: 1em 1.5em;
+  background: linear-gradient(90deg, #7a1cac, #420b60);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#index main section > div:last-child > div > div {
+  flex: 1;
+}
+#index main section > div:last-child > div > div h1 {
+  color: #fefbff;
+  font-size: 1.2rem;
+  margin: 0;
+}
+#index main section > div:last-child > div > div p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-size: 0.9rem;
+}
+#index main section > div:last-child > div h2 {
+  color: #fefbff;
+  font-size: 1rem;
+  margin: 0;
+}
+#index main section > div:last-child > div:hover {
+  background: linear-gradient(90deg, #420b60, #7a1cac);
+}
+#interview main {
   margin-top: 15vh;
 }
-
-main p {
+#interview main p {
   display: flex;
   justify-self: center;
   width: 60%;
   text-align: justify;
 }
-
-.center_f {
+#interview .center_f {
   display: flex;
   justify-content: center;
-  color: #FEFBFF;
+  color: #fefbff;
 }
-
-iframe {
+#interview iframe {
   display: flex;
   justify-self: center;
   width: 80%;
