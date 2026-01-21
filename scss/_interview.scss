@@ -26,6 +26,7 @@
     display: flex;
     justify-content: center;
     color: $white;
+    margin-bottom: 20px;
   }
 
   iframe {
@@ -35,5 +36,46 @@
     aspect-ratio: 16/9;
     border-radius: 10px;
     border: solid #a90567 2px;
+  }
+
+  .question{
+    margin: 2vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .question_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    background-color: $violet-clair;
+    margin: 10px 0px;
+    border: solid 1px $white;
+    border-radius: 20px;
+    padding: 7px;
+    & h3{
+      color: $white;
+      font-size: x-large;
+      margin: 10px;
+      margin-bottom: 12px;
+      justify-self: flex-end;
+      align-self: flex-end;
+    }
+    & img{
+      margin: 10px;
+    }
+    & h2{
+      color: $white;
+    }
+    & p{
+      color: $white;
+      font-size: small;
+    }
+    & div{
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

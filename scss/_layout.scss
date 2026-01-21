@@ -17,7 +17,6 @@ body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
-  background: linear-gradient(315deg, $violet 7%, $violet 38%, $violet 68%);
   background: $bg-grey;
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
@@ -73,7 +72,7 @@ body {
 }
 
 .wave {
-  background: $violet 7%;
+  background: $violet-clair 7%;
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
@@ -94,7 +93,7 @@ body {
 }
 
 .wave:nth-of-type(3) {
-  background: $violet 68%;
+  background: $violet-sombre 68%;
   bottom: -2.5em;
   animation: wave 20s -1s reverse infinite;
   opacity: 0.9;
@@ -134,4 +133,8 @@ body {
   height: auto;
   transform: rotate(-180deg);
   position: absolute;
+}
+
+footer {
+  margin-top: 20vh;
 }

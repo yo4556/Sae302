@@ -8,7 +8,6 @@ body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
-  background: linear-gradient(315deg, #2e073f 7%, #2e073f 38%, #2e073f 68%);
   background: #151515;
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
@@ -64,7 +63,7 @@ body {
   }
 }
 .wave {
-  background: #2e073f 7%;
+  background: #7a1cac 7%;
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
@@ -85,7 +84,7 @@ body {
 }
 
 .wave:nth-of-type(3) {
-  background: #2e073f 68%;
+  background: #1c0426 68%;
   bottom: -2.5em;
   animation: wave 20s -1s reverse infinite;
   opacity: 0.9;
@@ -121,6 +120,10 @@ body {
   height: auto;
   transform: rotate(-180deg);
   position: absolute;
+}
+
+footer {
+  margin-top: 20vh;
 }
 
 * {
@@ -151,7 +154,6 @@ body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
-  background: linear-gradient(315deg, #2e073f 7%, #2e073f 38%, #2e073f 68%);
   background: #151515;
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
@@ -207,7 +209,7 @@ body {
   }
 }
 .wave {
-  background: #2e073f 7%;
+  background: #7a1cac 7%;
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
@@ -228,7 +230,7 @@ body {
 }
 
 .wave:nth-of-type(3) {
-  background: #2e073f 68%;
+  background: #1c0426 68%;
   bottom: -2.5em;
   animation: wave 20s -1s reverse infinite;
   opacity: 0.9;
@@ -264,6 +266,10 @@ body {
   height: auto;
   transform: rotate(-180deg);
   position: absolute;
+}
+
+footer {
+  margin-top: 20vh;
 }
 
 #index header {
@@ -378,6 +384,7 @@ body {
   display: flex;
   justify-content: center;
   color: #fefbff;
+  margin-bottom: 20px;
 }
 #interview iframe {
   display: flex;
@@ -386,6 +393,45 @@ body {
   aspect-ratio: 16/9;
   border-radius: 10px;
   border: solid #a90567 2px;
+}
+#interview .question {
+  margin: 2vw !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#interview .question_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60%;
+  background-color: #7a1cac;
+  margin: 10px 0px;
+  border: solid 1px #fefbff;
+  border-radius: 20px;
+  padding: 7px;
+}
+#interview .question_box h3 {
+  color: #fefbff;
+  font-size: x-large;
+  margin: 10px;
+  margin-bottom: 12px;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+#interview .question_box img {
+  margin: 10px;
+}
+#interview .question_box h2 {
+  color: #fefbff;
+}
+#interview .question_box p {
+  color: #fefbff;
+  font-size: small;
+}
+#interview .question_box div {
+  display: flex;
+  flex-direction: column;
 }
 
 #game header nav {
