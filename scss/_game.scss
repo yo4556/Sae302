@@ -1,3 +1,12 @@
 #game{
-    
+    header {
+    nav {
+      @extend .main-nav;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      border: none;
+      width: 95%;
+    }
+  } 
 }

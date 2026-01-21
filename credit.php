@@ -3,7 +3,7 @@ include("autres_pages/head.php");
 ?>
 <title>The end</title>
 </head>
-<body id="end">
+<body id="credit">
 <?php
 include("autres_pages/menu.php");
 ?>

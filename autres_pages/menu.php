@@ -17,7 +17,7 @@
 <header id="header">
     <nav>
         <div>
-            <img src="img/note.svg" alt="">
+            <img src="img/note.svg" alt="note-music">
             <h1>Webdocumentary</h1>
         </div>
         <ul>
@@ -25,6 +25,6 @@
             <li><a href="social.php">Social</a></li>
             <li><a href="interview.php">Expert View</a></li>
             <li><a href="game.php">Game</a></li>
-            <li><a href="end.php">End</a></li>
+            <li><a href="credit.php">Credits</a></li>
         </ul>
     </nav>

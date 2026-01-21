@@ -1,13 +1,25 @@
 #interview {
-  main {
-    margin-top: 15vh;
+  header {
+    nav {
+      @extend .main-nav;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      border: none;
+      width: 95%;
+    }
   }
 
-  main p {
-    display: flex;
-    justify-self: center;
-    width: 60%;
-    text-align: justify;
+  main {
+    margin-top: 15vh;
+
+    p {
+      display: flex;
+      justify-self: center;
+      width: 60%;
+      text-align: justify;
+      color: $white; // Ajouté pour la lisibilité sur fond sombre
+    }
   }
 
   .center_f {

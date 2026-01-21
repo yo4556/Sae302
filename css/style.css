@@ -1,5 +1,21 @@
-header nav {
-  position: fixed;
+html {
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: #151515;
+  animation: gradient 25s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+.main-nav, #credit header nav, #game header nav, #interview header nav, #social header nav, #index header nav {
+  position: absolute;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
@@ -11,45 +27,28 @@ header nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
+  transition: all 0.5s ease-in-out;
+  z-index: 1000;
 }
-header nav div {
+.main-nav div, #credit header nav div, #game header nav div, #interview header nav div, #social header nav div, #index header nav div {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-header nav ul {
+.main-nav ul, #credit header nav ul, #game header nav ul, #interview header nav ul, #social header nav ul, #index header nav ul {
   display: flex;
   gap: 40px;
+  margin: 0;
+  list-style: none;
 }
-header nav ul a {
+.main-nav ul a, #credit header nav ul a, #game header nav ul a, #interview header nav ul a, #social header nav ul a, #index header nav ul a {
   color: #fefbff;
+  text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
 }
-header nav ul a:active, header nav ul a:hover {
+.main-nav ul a:active, #credit header nav ul a:active, #game header nav ul a:active, #interview header nav ul a:active, #social header nav ul a:active, #index header nav ul a:active, .main-nav ul a:hover, #credit header nav ul a:hover, #game header nav ul a:hover, #interview header nav ul a:hover, #social header nav ul a:hover, #index header nav ul a:hover {
   text-decoration: underline;
-}
-
-/*
-.sticky{
-  transition: all 0.5s ease-in-out;
-  width: 80%;
-  position: fixed;
-  top: 3%;
-  left: 50%;
-  border-radius: 50px;
-  opacity: 100%;
-  opacity: 0%;
-}
-*/
-body {
-  margin: auto;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow: auto;
-  background: #151515;
-  animation: gradient 25s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
 }
 
 @keyframes gradient {
@@ -75,37 +74,6 @@ body {
   bottom: 0;
   left: 0;
   z-index: -1;
-}
-
-.wave:nth-of-type(2) {
-  bottom: -1.25em;
-  animation: wave 18s linear reverse infinite;
-  opacity: 0.8;
-}
-
-.wave:nth-of-type(3) {
-  bottom: -2.5em;
-  animation: wave 20s -1s reverse infinite;
-  opacity: 0.9;
-}
-
-@keyframes wave {
-  2% {
-    transform: translateX(1);
-  }
-  25% {
-    transform: translateX(-25%);
-  }
-  50% {
-    transform: translateX(-50%);
-  }
-  75% {
-    transform: translateX(-25%);
-  }
-}
-footer {
-  width: 100%;
-  display: flex;
 }
 
 #fleche_div {
@@ -144,8 +112,24 @@ li {
   list-style: none;
 }
 
-header nav {
-  position: fixed;
+html {
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: #151515;
+  animation: gradient 25s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+.main-nav, #credit header nav, #game header nav, #interview header nav, #social header nav, #index header nav {
+  position: absolute;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
@@ -157,45 +141,28 @@ header nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
+  transition: all 0.5s ease-in-out;
+  z-index: 1000;
 }
-header nav div {
+.main-nav div, #credit header nav div, #game header nav div, #interview header nav div, #social header nav div, #index header nav div {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-header nav ul {
+.main-nav ul, #credit header nav ul, #game header nav ul, #interview header nav ul, #social header nav ul, #index header nav ul {
   display: flex;
   gap: 40px;
+  margin: 0;
+  list-style: none;
 }
-header nav ul a {
+.main-nav ul a, #credit header nav ul a, #game header nav ul a, #interview header nav ul a, #social header nav ul a, #index header nav ul a {
   color: #fefbff;
+  text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
 }
-header nav ul a:active, header nav ul a:hover {
+.main-nav ul a:active, #credit header nav ul a:active, #game header nav ul a:active, #interview header nav ul a:active, #social header nav ul a:active, #index header nav ul a:active, .main-nav ul a:hover, #credit header nav ul a:hover, #game header nav ul a:hover, #interview header nav ul a:hover, #social header nav ul a:hover, #index header nav ul a:hover {
   text-decoration: underline;
-}
-
-/*
-.sticky{
-  transition: all 0.5s ease-in-out;
-  width: 80%;
-  position: fixed;
-  top: 3%;
-  left: 50%;
-  border-radius: 50px;
-  opacity: 100%;
-  opacity: 0%;
-}
-*/
-body {
-  margin: auto;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow: auto;
-  background: #151515;
-  animation: gradient 25s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
 }
 
 @keyframes gradient {
@@ -221,37 +188,6 @@ body {
   bottom: 0;
   left: 0;
   z-index: -1;
-}
-
-.wave:nth-of-type(2) {
-  bottom: -1.25em;
-  animation: wave 18s linear reverse infinite;
-  opacity: 0.8;
-}
-
-.wave:nth-of-type(3) {
-  bottom: -2.5em;
-  animation: wave 20s -1s reverse infinite;
-  opacity: 0.9;
-}
-
-@keyframes wave {
-  2% {
-    transform: translateX(1);
-  }
-  25% {
-    transform: translateX(-25%);
-  }
-  50% {
-    transform: translateX(-50%);
-  }
-  75% {
-    transform: translateX(-25%);
-  }
-}
-footer {
-  width: 100%;
-  display: flex;
 }
 
 #fleche_div {
@@ -354,6 +290,22 @@ footer {
 #index main section > div:last-child > div:hover {
   background: linear-gradient(90deg, #420b60, #7a1cac);
 }
+
+#social header nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border: none;
+  width: 95%;
+}
+
+#interview header nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border: none;
+  width: 95%;
+}
 #interview main {
   margin-top: 15vh;
 }
@@ -362,6 +314,7 @@ footer {
   justify-self: center;
   width: 60%;
   text-align: justify;
+  color: #fefbff;
 }
 #interview .center_f {
   display: flex;
@@ -375,6 +328,22 @@ footer {
   aspect-ratio: 16/9;
   border-radius: 10px;
   border: solid #a90567 2px;
+}
+
+#game header nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border: none;
+  width: 95%;
+}
+
+#credit header nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border: none;
+  width: 95%;
 }
 
 /*# sourceMappingURL=style.css.map */
