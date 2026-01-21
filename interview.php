@@ -8,6 +8,9 @@ include("autres_pages/head.php");
 include("autres_pages/menu.php");
 ?>
 <main id="main">
+    <div class="disque">
+        <img class="img_disque" src="img/vinyl_magenta.png">
+    </div>
     <h1 class="center_f">The interview</h1>
     <p class="center_f">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa

@@ -7,7 +7,6 @@ include("autres_pages/head.php");
 <?php
 include("autres_pages/menu.php");
 ?>
-
 <div id="title_index">
     <h1>HARMONY & DISCORD</h1>
     <h3>Youth Music Culture</h3>

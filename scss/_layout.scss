@@ -54,7 +54,7 @@ body {
     a {
       color: $white;
       text-decoration: none;
-      font-size: 1.2em;
+      font-size: 1em;
       font-weight: bold;
 
       &:active,
@@ -82,7 +82,7 @@ body {
   opacity: 0.8;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: -5;
 }
 
 .wave:nth-of-type(2) {
@@ -135,6 +135,28 @@ body {
   position: absolute;
 }
 
+.disque{
+  position: fixed;
+  right: 4vw;
+  width: 15vw;
+  top: 5vw;
+  z-index: -2;
+}
+
+.img_disque{
+   animation: disque 6s infinite;
+   animation-timing-function: linear;
+}
+
 footer {
   margin-top: 20vh;
+}
+
+@keyframes disque {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }

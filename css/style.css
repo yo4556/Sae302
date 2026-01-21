@@ -44,7 +44,7 @@ body {
 .main-nav ul a, #credit header nav ul a, #game header nav ul a, #interview header nav ul a, #social header nav ul a, #index header nav ul a {
   color: #fefbff;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
 }
 .main-nav ul a:active, #credit header nav ul a:active, #game header nav ul a:active, #interview header nav ul a:active, #social header nav ul a:active, #index header nav ul a:active, .main-nav ul a:hover, #credit header nav ul a:hover, #game header nav ul a:hover, #interview header nav ul a:hover, #social header nav ul a:hover, #index header nav ul a:hover {
@@ -73,7 +73,7 @@ body {
   opacity: 0.8;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: -5;
 }
 
 .wave:nth-of-type(2) {
@@ -122,10 +122,31 @@ body {
   position: absolute;
 }
 
+.disque {
+  position: fixed;
+  right: 4vw;
+  width: 15vw;
+  top: 5vw;
+  z-index: -2;
+}
+
+.img_disque {
+  animation: disque 6s infinite;
+  animation-timing-function: linear;
+}
+
 footer {
   margin-top: 20vh;
 }
 
+@keyframes disque {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -190,7 +211,7 @@ body {
 .main-nav ul a, #credit header nav ul a, #game header nav ul a, #interview header nav ul a, #social header nav ul a, #index header nav ul a {
   color: #fefbff;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
 }
 .main-nav ul a:active, #credit header nav ul a:active, #game header nav ul a:active, #interview header nav ul a:active, #social header nav ul a:active, #index header nav ul a:active, .main-nav ul a:hover, #credit header nav ul a:hover, #game header nav ul a:hover, #interview header nav ul a:hover, #social header nav ul a:hover, #index header nav ul a:hover {
@@ -219,7 +240,7 @@ body {
   opacity: 0.8;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: -5;
 }
 
 .wave:nth-of-type(2) {
@@ -268,10 +289,31 @@ body {
   position: absolute;
 }
 
+.disque {
+  position: fixed;
+  right: 4vw;
+  width: 15vw;
+  top: 5vw;
+  z-index: -2;
+}
+
+.img_disque {
+  animation: disque 6s infinite;
+  animation-timing-function: linear;
+}
+
 footer {
   margin-top: 20vh;
 }
 
+@keyframes disque {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
 #index header {
   min-height: 100vh;
   background-image: url("/img/heroimage.png");
@@ -363,6 +405,9 @@ footer {
   width: 95%;
 }
 
+#interview {
+  overflow-x: hidden;
+}
 #interview header nav {
   position: absolute;
   top: 0;
@@ -371,7 +416,7 @@ footer {
   width: 95%;
 }
 #interview main {
-  margin-top: 15vh;
+  margin-top: 25vh;
 }
 #interview main p {
   display: flex;
@@ -464,34 +509,34 @@ footer {
   bottom: 130px;
 }
 #interview .music_note_vroum .note:nth-child(1) {
-  animation: fly-right 6124ms linear infinite;
-  animation-delay: 327ms;
-  width: 35px;
+  animation: fly-right 5372ms linear infinite;
+  animation-delay: 1405ms;
+  width: 22px;
 }
 #interview .music_note_vroum .note:nth-child(2) {
-  animation: fly-up 4897ms linear infinite;
-  animation-delay: 2049ms;
+  animation: fly-up 6513ms linear infinite;
+  animation-delay: 1053ms;
   width: 49px;
 }
 #interview .music_note_vroum .note:nth-child(3) {
-  animation: fly-right 4340ms linear infinite;
-  animation-delay: 2037ms;
-  width: 36px;
+  animation: fly-right 6873ms linear infinite;
+  animation-delay: 4922ms;
+  width: 35px;
 }
 #interview .music_note_vroum .note:nth-child(4) {
-  animation: fly-up 7465ms linear infinite;
-  animation-delay: 1402ms;
+  animation: fly-up 6515ms linear infinite;
+  animation-delay: 4821ms;
   width: 43px;
 }
 #interview .music_note_vroum .note:nth-child(5) {
-  animation: fly-right 7917ms linear infinite;
-  animation-delay: 3268ms;
-  width: 46px;
+  animation: fly-right 5567ms linear infinite;
+  animation-delay: 2613ms;
+  width: 28px;
 }
 #interview .music_note_vroum .note:nth-child(6) {
-  animation: fly-up 7792ms linear infinite;
-  animation-delay: 3072ms;
-  width: 28px;
+  animation: fly-up 7392ms linear infinite;
+  animation-delay: 3256ms;
+  width: 23px;
 }
 @keyframes fly-right {
   0% {

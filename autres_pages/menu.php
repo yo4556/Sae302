@@ -22,9 +22,10 @@
         </div>
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="social.php">Social</a></li>
-            <li><a href="interview.php">Expert View</a></li>
-            <li><a href="game.php">Game</a></li>
-            <li><a href="credit.php">Credits</a></li>
+            <li><a href="social.php">Social And Community</a></li>
+            <li><a href="interview.php">An Expert's View</a></li>
+            <li><a href="game.php">Behind The Sound</a></li>
+            <li><a href="credit.php">Final Note</a></li>
         </ul>
     </nav>
+   

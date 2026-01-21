@@ -8,6 +8,9 @@ include("autres_pages/head.php");
 include("autres_pages/menu.php");
 ?>
 <main>
+    <div class="disque">
+        <img class="img_disque" src="img/vinyl_rose.png">
+    </div>
 
 </main>
 
