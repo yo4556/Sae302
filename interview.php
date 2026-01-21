@@ -55,6 +55,18 @@ include("autres_pages/menu.php");
             <h3>00:00</h3>
         </div>
     </section>
+    <section class="music_note_vroum">
+        <img class="speaker" src="img/enceinte.svg" alt="Enceinte">
+    
+    <div class="notes-container">
+        <img class="note" src="img/une_note.png">
+        <img class="note" src="img/deux_notes.png">
+        <img class="note" src="img/une_note.png">
+        <img class="note" src="img/deux_notes.png">
+        <img class="note" src="img/une_note.png">
+        <img class="note" src="img/deux_notes.png">
+    </div>
+    </section>
 </main>
 
 <?php

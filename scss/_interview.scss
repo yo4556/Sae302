@@ -78,4 +78,89 @@
       flex-direction: column;
     }
   }
+
+  $anim-duration: 4s;
+  $note-count: 6;   
+
+.music_note_vroum {
+  position: relative;
+  width: 100%;
+  height: 300px; 
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+
+  .speaker {
+    width: 120px;
+    height: auto;
+    z-index: 10;
+    position: relative;
+    animation: beat 0.4s infinite alternate;
+  }
+
+  .notes-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+  }
+
+  .note {
+    position: absolute;
+    opacity: 0; 
+    left: 140px;
+    bottom: 130px; 
+
+    @for $i from 1 through $note-count {
+      &:nth-child(#{$i}) {
+        $anim-name: if($i % 2 == 0, fly-up, fly-right);
+        
+        animation: #{$anim-name} 
+                   #{random(4000) + 4000}ms 
+                   linear 
+                   infinite;
+        
+        animation-delay: #{random(5000)}ms; 
+        
+        width: #{random(30) + 20}px; 
+      }
+    }
+  }
+}
+
+
+@keyframes fly-right {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(0.5);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(90vw, -70px) rotate(45deg) scale(1.2);
+    opacity: 0; 
+  }
+}
+
+@keyframes fly-up {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(0.5);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(70vw, -100px) rotate(-30deg) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes beat {
+  to { transform: scale(1.08); }
+}
 }
