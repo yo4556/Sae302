@@ -148,10 +148,6 @@ body {
    animation-timing-function: linear;
 }
 
-footer {
-  margin-top: 20vh;
-}
-
 @keyframes disque {
   0% {
     transform: rotate(0deg);
@@ -170,6 +166,8 @@ footer{
   padding: 20px;
   min-height: 20em;
   color: $white;
+  position: relative;
+  bottom: 0;
 }
 
 footer div:first-child{

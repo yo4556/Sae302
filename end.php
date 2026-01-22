@@ -7,6 +7,7 @@ include("autres_pages/head.php");
 <?php
 include("autres_pages/menu.php");
 ?>
+</header>
 <main>
 
 </main>
