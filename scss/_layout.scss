@@ -160,3 +160,49 @@ footer {
     transform: rotate(359deg);
   }
 }
+
+
+footer{
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 33% 66%;
+  align-items: center;
+  padding: 20px;
+  min-height: 20em;
+  color: $white;
+}
+
+footer div:first-child{
+  justify-self: center;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer div:first-child h1{
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 550;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+footer div:first-child ul{
+  width: 100%;
+}
+
+footer div:last-child{
+  justify-self: center;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: xx-large;
+}
