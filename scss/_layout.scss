@@ -16,7 +16,7 @@ html {
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
   background: $bg-grey;
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
@@ -160,6 +160,7 @@ body {
 
 footer{
   display: grid;
+  overflow-x: hidden;
   margin: 0 auto;
   grid-template-columns: 33% 66%;
   align-items: center;

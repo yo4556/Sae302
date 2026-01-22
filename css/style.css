@@ -7,7 +7,7 @@ html {
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
   background: #151515;
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
@@ -145,6 +145,7 @@ body {
 }
 footer {
   display: grid;
+  overflow-x: hidden;
   margin: 0 auto;
   grid-template-columns: 33% 66%;
   align-items: center;
@@ -218,7 +219,7 @@ html {
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
   background: #151515;
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
@@ -356,6 +357,7 @@ body {
 }
 footer {
   display: grid;
+  overflow-x: hidden;
   margin: 0 auto;
   grid-template-columns: 33% 66%;
   align-items: center;
@@ -535,6 +537,7 @@ footer div:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 #interview .question_box {
   display: flex;
@@ -600,34 +603,34 @@ footer div:last-child {
   bottom: 130px;
 }
 #interview .music_note_vroum .note:nth-child(1) {
-  animation: fly-right 4469ms linear infinite;
-  animation-delay: 2198ms;
-  width: 29px;
+  animation: fly-right 5332ms linear infinite;
+  animation-delay: 3554ms;
+  width: 26px;
 }
 #interview .music_note_vroum .note:nth-child(2) {
-  animation: fly-up 5648ms linear infinite;
-  animation-delay: 2508ms;
-  width: 31px;
+  animation: fly-up 6347ms linear infinite;
+  animation-delay: 4457ms;
+  width: 41px;
 }
 #interview .music_note_vroum .note:nth-child(3) {
-  animation: fly-right 4404ms linear infinite;
-  animation-delay: 2423ms;
-  width: 21px;
+  animation: fly-right 6912ms linear infinite;
+  animation-delay: 2631ms;
+  width: 41px;
 }
 #interview .music_note_vroum .note:nth-child(4) {
-  animation: fly-up 6145ms linear infinite;
-  animation-delay: 2155ms;
-  width: 48px;
+  animation: fly-up 5974ms linear infinite;
+  animation-delay: 3399ms;
+  width: 26px;
 }
 #interview .music_note_vroum .note:nth-child(5) {
-  animation: fly-right 4452ms linear infinite;
-  animation-delay: 3500ms;
-  width: 45px;
+  animation: fly-right 4660ms linear infinite;
+  animation-delay: 4389ms;
+  width: 40px;
 }
 #interview .music_note_vroum .note:nth-child(6) {
-  animation: fly-up 5633ms linear infinite;
-  animation-delay: 282ms;
-  width: 26px;
+  animation: fly-up 4542ms linear infinite;
+  animation-delay: 1683ms;
+  width: 23px;
 }
 @keyframes fly-right {
   0% {
@@ -659,6 +662,124 @@ footer div:last-child {
   to {
     transform: scale(1.08);
   }
+}
+
+.accordion-item {
+  width: 60%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.accordion-item.active {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.accordion-item.active .accordion-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.accordion-item.active .arrow-icon {
+  transform: rotate(90deg);
+}
+
+.accordion-header {
+  background: linear-gradient(130deg, #2e073f 5%, #7a1cac 100%);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  min-height: 60px;
+}
+.accordion-header .header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.accordion-header .arrow-icon {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.3s ease;
+}
+.accordion-header .header-text {
+  display: flex;
+  flex-direction: column;
+}
+.accordion-header .header-text h2 {
+  color: #fefbff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+.accordion-header .header-text p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  margin: 0;
+  display: block;
+  width: auto;
+}
+.accordion-header .duration {
+  color: #fefbff;
+  font-weight: bold;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  padding: 0 25px;
+}
+.accordion-body ul {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+}
+.accordion-body li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  color: #fefbff;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+}
+.accordion-body li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.accordion-body li a {
+  color: #fefbff;
+  text-decoration: underline 1px;
+  text-underline-offset: 3px;
+  width: 85%;
+  line-height: 1.4;
+}
+.accordion-body li a:hover {
+  color: #ebd3f8;
+}
+.accordion-body li span {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: monospace;
+}
+
+.btn-continuer {
+  background: linear-gradient(90deg, #ad49e1 0%, #d870ff 100%);
+  color: #fefbff;
+  padding: 15px 50px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  box-shadow: 0 4px 15px rgba(173, 73, 225, 0.4);
+  transition: transform 0.2s;
+}
+.btn-continuer:hover {
+  transform: scale(1.05);
+  text-decoration: none;
 }
 
 #game header nav {
