@@ -26,7 +26,6 @@ include("autres_pages/menu.php");
             </div>
         </div>
     </section>
-    <footer></footer>
 </main>
 <?php
 include("autres_pages/footer.php");
