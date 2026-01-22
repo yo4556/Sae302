@@ -7,7 +7,7 @@ html {
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow: auto;
+  overflow-x: hidden;
   background: #151515;
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
@@ -218,7 +218,7 @@ html {
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow: auto;
+  overflow-x: hidden;
   background: #151515;
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
@@ -600,34 +600,34 @@ footer div:last-child {
   bottom: 130px;
 }
 #interview .music_note_vroum .note:nth-child(1) {
-  animation: fly-right 5731ms linear infinite;
-  animation-delay: 4356ms;
-  width: 30px;
+  animation: fly-right 4469ms linear infinite;
+  animation-delay: 2198ms;
+  width: 29px;
 }
 #interview .music_note_vroum .note:nth-child(2) {
-  animation: fly-up 7731ms linear infinite;
-  animation-delay: 4447ms;
-  width: 39px;
+  animation: fly-up 5648ms linear infinite;
+  animation-delay: 2508ms;
+  width: 31px;
 }
 #interview .music_note_vroum .note:nth-child(3) {
-  animation: fly-right 7357ms linear infinite;
-  animation-delay: 656ms;
-  width: 43px;
+  animation: fly-right 4404ms linear infinite;
+  animation-delay: 2423ms;
+  width: 21px;
 }
 #interview .music_note_vroum .note:nth-child(4) {
-  animation: fly-up 7856ms linear infinite;
-  animation-delay: 33ms;
-  width: 36px;
+  animation: fly-up 6145ms linear infinite;
+  animation-delay: 2155ms;
+  width: 48px;
 }
 #interview .music_note_vroum .note:nth-child(5) {
-  animation: fly-right 6736ms linear infinite;
-  animation-delay: 2328ms;
-  width: 38px;
+  animation: fly-right 4452ms linear infinite;
+  animation-delay: 3500ms;
+  width: 45px;
 }
 #interview .music_note_vroum .note:nth-child(6) {
-  animation: fly-up 6525ms linear infinite;
-  animation-delay: 3550ms;
-  width: 28px;
+  animation: fly-up 5633ms linear infinite;
+  animation-delay: 282ms;
+  width: 26px;
 }
 @keyframes fly-right {
   0% {

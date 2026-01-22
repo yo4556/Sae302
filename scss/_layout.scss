@@ -16,7 +16,7 @@ html {
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow: auto;
+  overflow-x: hidden;
   background: $bg-grey;
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
