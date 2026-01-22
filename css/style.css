@@ -510,6 +510,7 @@ footer div:last-child {
 }
 #interview main {
   margin-top: 25vh;
+  padding: 0 20px;
 }
 #interview main p {
   display: flex;
@@ -517,6 +518,13 @@ footer div:last-child {
   width: 60%;
   text-align: justify;
   color: #fefbff;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+#interview main .intro-text {
+  width: 60%;
+  text-align: center;
+  margin: 20px auto;
 }
 #interview .center_f {
   display: flex;
@@ -524,13 +532,56 @@ footer div:last-child {
   color: #fefbff;
   margin-bottom: 20px;
 }
+#interview .center_f h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  word-spacing: 0.2em;
+  background: linear-gradient(130deg, #ad49e1 0%, #d870ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 30px 0 20px 0;
+  text-shadow: 0 0 30px rgba(173, 73, 225, 0.2);
+  filter: drop-shadow(0 0 10px rgba(169, 5, 103, 0.3));
+}
 #interview iframe {
   display: flex;
   justify-self: center;
   width: 80%;
+  max-width: 900px;
   aspect-ratio: 16/9;
-  border-radius: 10px;
+  border-radius: 15px;
   border: solid #a90567 2px;
+  box-shadow: 0 10px 30px rgba(169, 5, 103, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#interview iframe:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(169, 5, 103, 0.5);
+}
+#interview .disque {
+  position: fixed;
+  right: 102px;
+  top: 70px;
+  width: 150px;
+  z-index: 5;
+}
+#interview .disque .img_disque {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(169, 5, 103, 0.5));
+  animation: spin 8s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 #interview .question {
   margin: 2vw !important;
@@ -538,6 +589,13 @@ footer div:last-child {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+#interview .accordion-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
 }
 #interview .question_box {
   display: flex;
@@ -603,34 +661,34 @@ footer div:last-child {
   bottom: 130px;
 }
 #interview .music_note_vroum .note:nth-child(1) {
-  animation: fly-right 7540ms linear infinite;
-  animation-delay: 4737ms;
-  width: 27px;
+  animation: fly-right 5984ms linear infinite;
+  animation-delay: 2506ms;
+  width: 30px;
 }
 #interview .music_note_vroum .note:nth-child(2) {
-  animation: fly-up 4627ms linear infinite;
-  animation-delay: 2038ms;
-  width: 36px;
+  animation: fly-up 4513ms linear infinite;
+  animation-delay: 3451ms;
+  width: 27px;
 }
 #interview .music_note_vroum .note:nth-child(3) {
-  animation: fly-right 4859ms linear infinite;
-  animation-delay: 1022ms;
-  width: 46px;
+  animation: fly-right 7135ms linear infinite;
+  animation-delay: 285ms;
+  width: 37px;
 }
 #interview .music_note_vroum .note:nth-child(4) {
-  animation: fly-up 4454ms linear infinite;
-  animation-delay: 4745ms;
-  width: 38px;
+  animation: fly-up 4262ms linear infinite;
+  animation-delay: 799ms;
+  width: 32px;
 }
 #interview .music_note_vroum .note:nth-child(5) {
-  animation: fly-right 4134ms linear infinite;
-  animation-delay: 1673ms;
-  width: 42px;
+  animation: fly-right 6475ms linear infinite;
+  animation-delay: 660ms;
+  width: 50px;
 }
 #interview .music_note_vroum .note:nth-child(6) {
-  animation: fly-up 7580ms linear infinite;
-  animation-delay: 4627ms;
-  width: 48px;
+  animation: fly-up 7039ms linear infinite;
+  animation-delay: 4230ms;
+  width: 50px;
 }
 @keyframes fly-right {
   0% {
@@ -666,64 +724,81 @@ footer div:last-child {
 
 .accordion-item {
   width: 60%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   background-color: transparent;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
-  border: 1px solid transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .accordion-item.active {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #a90567;
+  background: linear-gradient(135deg, rgba(169, 5, 103, 0.1) 0%, rgba(173, 73, 225, 0.05) 100%);
 }
 .accordion-item.active .accordion-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .accordion-item.active .arrow-icon {
   transform: rotate(90deg);
+  color: #d870ff;
+}
+.accordion-item:hover {
+  border-color: rgba(169, 5, 103, 0.5);
 }
 
 .accordion-header {
-  background: linear-gradient(130deg, #2e073f 5%, #7a1cac 100%);
-  padding: 15px 25px;
+  background: linear-gradient(130deg, #7a1cac 5%, #ad49e1 100%);
+  padding: 12px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   user-select: none;
-  min-height: 60px;
+  min-height: 50px;
+  transition: all 0.3s ease;
+}
+.accordion-header:hover {
+  background: linear-gradient(130deg, #8b2bb8 5%, #be5af0 100%);
 }
 .accordion-header .header-left {
   display: flex;
   align-items: center;
   gap: 20px;
+  flex: 1;
 }
 .accordion-header .arrow-icon {
-  width: 15px;
-  height: 15px;
-  transition: transform 0.3s ease;
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #fefbff;
+  flex-shrink: 0;
 }
 .accordion-header .header-text {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 .accordion-header .header-text h2 {
   color: #fefbff;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 700;
   margin: 0;
+  letter-spacing: 0.3px;
 }
 .accordion-header .header-text p {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.85rem;
   margin: 0;
   display: block;
   width: auto;
+  font-weight: 500;
 }
 .accordion-header .duration {
   color: #fefbff;
   font-weight: bold;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  margin-left: 20px;
 }
 
 .accordion-body {
@@ -734,36 +809,49 @@ footer div:last-child {
 }
 .accordion-body ul {
   list-style: none;
-  padding: 20px 0;
+  padding: 25px 0;
   margin: 0;
 }
 .accordion-body li {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   color: #fefbff;
-  font-size: 0.95rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 10px;
+  font-size: 0.98rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 15px;
+  transition: all 0.2s ease;
 }
 .accordion-body li:last-child {
   border-bottom: none;
   margin-bottom: 0;
+  padding-bottom: 0;
+}
+.accordion-body li:hover {
+  padding-left: 10px;
+  border-bottom-color: rgba(169, 5, 103, 0.3);
 }
 .accordion-body li a {
-  color: #fefbff;
-  text-decoration: underline 1px;
-  text-underline-offset: 3px;
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
   width: 85%;
-  line-height: 1.4;
+  line-height: 1.5;
+  transition: all 0.2s ease;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
 }
 .accordion-body li a:hover {
-  color: #ebd3f8;
+  color: #d870ff;
+  border-bottom-color: #d870ff;
 }
 .accordion-body li span {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: monospace;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Courier New", monospace;
+  font-weight: 500;
+  flex-shrink: 0;
+  margin-left: 15px;
+  font-size: 0.9rem;
 }
 
 .btn-continuer {
@@ -775,10 +863,13 @@ footer div:last-child {
   font-weight: bold;
   text-transform: capitalize;
   box-shadow: 0 4px 15px rgba(173, 73, 225, 0.4);
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  display: inline-block;
 }
 .btn-continuer:hover {
   transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(173, 73, 225, 0.6);
   text-decoration: none;
 }
 

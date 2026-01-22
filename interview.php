@@ -13,29 +13,25 @@ include("autres_pages/menu.php");
         <img class="img_disque" src="img/vinyl_magenta.png">
     </div>
     <h1 class="center_f">The interview</h1>
-    <p class="center_f">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
-        consequatur nemo voluptas omnis doloremque odio quos soluta? Consequatur
-        enim quas fugiat commodi eos reiciendis accusamus cum, optio, maiores
-        sed velit? Culpa consequatur nemo voluptas omnis doloremque odio quos
-        soluta? Consequatur enim quas fugiat commodi eos reiciendis accusamus
-        cum, optio, maiores?
+    <p class="center_f intro-text">
+        Now, let's dive into the complexity of musical genres. We met with an expert to understand why music unites us as much as it divides us. Click on the questions below to jump directly to the relevant part of the interview.
     </p>
     <h1 class="center_f">Listen to an Expert</h1>
-    <h1 class="center_f">v</h1>
-    <iframe 
-  id="player" 
-  src="https://www.youtube.com/embed/EBgzNhHLTmA?si=428Qfkt442D_F2Pa&enablejsapi=1&cc_load_policy=1&controls=0" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen>
-</iframe>
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <iframe 
+            id="player" 
+            src="https://www.youtube.com/embed/EBgzNhHLTmA?si=428Qfkt442D_F2Pa&enablejsapi=1&cc_load_policy=1&cc_lang_pref=en" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
     <section class="question">
-    <h1 class="center_f">The questions</h1>
-    
-    <div class="accordion-item">
+        <h1 class="center_f">The questions</h1>
+        <div class="accordion-wrapper">
+        <div class="accordion-item">
         <div class="accordion-header">
             <div class="header-left">
                 <img class="arrow-icon" src="img/play.svg" alt="arrow">
@@ -126,10 +122,10 @@ include("autres_pages/menu.php");
         </div>
     </div>
 
-    <div class="center_f" style="margin-top: 40px;">
+    <div class="center_f" style="margin-top: 40px; margin-bottom: 40px;">
         <a href="game.php" class="btn-continuer">Continuer</a>
     </div>
-
+        </div>
 </section>
     <section class="music_note_vroum">
         <img class="speaker" src="img/enceinte.svg" alt="Enceinte">
