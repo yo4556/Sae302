@@ -1,13 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const e = document.getElementById("header");
-  window.addEventListener("scroll", () => {
-    5 < window.scrollY
-      ? e.classList.add("sticky")
-      : e.classList.remove("sticky");
-  });
-});
-
-
+// Scroll Progress Indicator
 const progress = document.getElementById('progress');
 const radius = progress.r.baseVal.value;
 const circumference = 2 * Math.PI * radius;
@@ -25,6 +16,56 @@ window.addEventListener('scroll', () => {
     progress.style.strokeDashoffset = offset;
 });
 
+// Start du iframe autoplay
+
+var player;
+  
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player');
+  }
+
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const listItems = document.querySelectorAll('.accordion-body li');
+
+    listItems.forEach(item => {
+      item.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const timeStr = this.querySelector('span').innerText.trim();
+        
+        if (timeStr && timeStr !== "00:00") {
+          const seconds = hmsToSeconds(timeStr);
+          
+          if (player && player.seekTo) {
+            player.seekTo(seconds, true);
+            player.playVideo();
+            
+            document.getElementById('player').scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
+      });
+    });
+  });
+
+  // Fonction utilitaire pour convertir "03:14" en secondes
+  function hmsToSeconds(str) {
+    var p = str.split(':'),
+        s = 0, m = 1;
+
+    while (p.length > 0) {
+        s += m * parseInt(p.pop(), 10);
+        m *= 60;
+    }
+    return s;
+  }
+
+// Accordion Functionality
+
 const accordions = document.querySelectorAll(".accordion-item");
 
 accordions.forEach((accordion) => {
@@ -40,10 +81,8 @@ accordions.forEach((accordion) => {
     //   }
     // });
 
-    // Basculer la classe active
     accordion.classList.toggle("active");
 
-    // Gérer la hauteur pour l'animation
     if (accordion.classList.contains("active")) {
       body.style.maxHeight = body.scrollHeight + "px";
     } else {
