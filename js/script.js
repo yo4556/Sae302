@@ -19,50 +19,63 @@ window.addEventListener('scroll', () => {
 // Start du iframe autoplay
 
 var player;
-  
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player');
-  }
 
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const listItems = document.querySelectorAll('.accordion-body li');
+function onPlayerReady(event) {
+  console.log("Le lecteur est prêt.");
+}
 
-    listItems.forEach(item => {
-      item.addEventListener('click', function(e) {
-        e.preventDefault();
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+document.addEventListener('DOMContentLoaded', function() {
+  const listItems = document.querySelectorAll('.accordion-body li');
+
+  listItems.forEach(item => {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const span = this.querySelector('span');
+      if (!span) return;
+
+      const timeStr = span.innerText.trim();
+      
+      if (timeStr && timeStr !== "00:00") {
+        const seconds = hmsToSeconds(timeStr);
         
-        const timeStr = this.querySelector('span').innerText.trim();
-        
-        if (timeStr && timeStr !== "00:00") {
-          const seconds = hmsToSeconds(timeStr);
+        if (player && typeof player.seekTo === 'function') {
+          player.seekTo(seconds, true);
+          player.playVideo();
           
-          if (player && player.seekTo) {
-            player.seekTo(seconds, true);
-            player.playVideo();
-            
-            document.getElementById('player').scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }
+          document.getElementById('player').scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'center' 
+          });
         }
-      });
+      }
     });
   });
+});
 
-  // Fonction utilitaire pour convertir "03:14" en secondes
-  function hmsToSeconds(str) {
-    var p = str.split(':'),
-        s = 0, m = 1;
+function hmsToSeconds(str) {
+  var p = str.split(':'),
+      s = 0, m = 1;
 
-    while (p.length > 0) {
-        s += m * parseInt(p.pop(), 10);
-        m *= 60;
-    }
-    return s;
+  while (p.length > 0) {
+      s += m * parseInt(p.pop(), 10);
+      m *= 60;
   }
+  return s;
+}
 
 // Accordion Functionality
 

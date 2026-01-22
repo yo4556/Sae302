@@ -23,7 +23,15 @@ include("autres_pages/menu.php");
     </p>
     <h1 class="center_f">Listen to an Expert</h1>
     <h1 class="center_f">v</h1>
-    <iframe id="player" src="https://www.youtube.com/embed/EBgzNhHLTmA?si=428Qfkt442D_F2Pa&amp;controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe 
+  id="player" 
+  src="https://www.youtube.com/embed/EBgzNhHLTmA?si=428Qfkt442D_F2Pa&enablejsapi=1&cc_load_policy=1&controls=0" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" 
+  allowfullscreen>
+</iframe>
     <section class="question">
     <h1 class="center_f">The questions</h1>
     
