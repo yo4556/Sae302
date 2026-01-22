@@ -76,7 +76,7 @@ body {
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
-  height: 12em;
+  height: 25em;
   animation: wave 10s -3s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 0.8;
@@ -87,14 +87,14 @@ body {
 
 .wave:nth-of-type(2) {
   background: $violet 38%;
-  bottom: -1.25em;
+  bottom: -2em;
   animation: wave 18s linear reverse infinite;
   opacity: 0.8;
 }
 
 .wave:nth-of-type(3) {
   background: $violet-sombre 68%;
-  bottom: -2.5em;
+  bottom: -4em;
   animation: wave 20s -1s reverse infinite;
   opacity: 0.9;
 }
