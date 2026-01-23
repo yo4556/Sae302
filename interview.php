@@ -67,15 +67,15 @@ include("autres_pages/menu.php");
             <ul>
                 <li>
                     <a href="#">5. What types of prejudices come up most often around different musical genres? </a>
-                    <span>00:00</span>
+                    <span>4:58</span>
                 </li>
                 <li>
                     <a href="#">6. Do you think this is a reality? Don't you think the prejudices come from the music itself? Or rather from the image conveyed by artists or the media?</a>
-                    <span>00:00</span>
+                    <span>5:55</span>
                 </li>
                 <li>
                     <a href="#">7. So, you think there are changes. But for you, for example, regarding rap, are there differences between the stereotypical image of rap today and the rap of the 90s?</a>
-                    <span>00:00</span>
+                    <span>6:43</span>
                 </li>
             </ul>
         </div>
@@ -94,11 +94,11 @@ include("autres_pages/menu.php");
         </div>
         <div class="accordion-body">
             <ul>
-                <li><a href="#">8. In your opinion, what place does music occupy in the lives of young people today?</a> <span>00:00</span></li>
-                <li><a href="#">9. And do you think that these young people have a different approach compared to older generations?</a> <span>00:00</span></li>
-                <li><a href="#">10. Do you also think that social media influences young people's musical tastes?</a> <span>00:00</span></li>
-                <li><a href="#">11. Okay. And the stereotypes and judgments that you often hear among young people regarding these styles, which ones do you hear most often?</a> <span>00:00</span></li>
-                <li><a href="#">12. On that question, you mentioned your classes. In your classes, have you noticed that music, on the other hand, can bring some of your students together?</a> <span>00:00</span></li>
+                <li><a href="#">8. In your opinion, what place does music occupy in the lives of young people today?</a> <span>8:10</span></li>
+                <li><a href="#">9. And do you think that these young people have a different approach compared to older generations?</a> <span>8:44</span></li>
+                <li><a href="#">10. Do you also think that social media influences young people's musical tastes?</a> <span>8:55</span></li>
+                <li><a href="#">11. Okay. And the stereotypes and judgments that you often hear among young people regarding these styles, which ones do you hear most often?</a> <span>9:47</span></li>
+                <li><a href="#">12. On that question, you mentioned your classes. In your classes, have you noticed that music, on the other hand, can bring some of your students together?</a> <span>10:40</span></li>
             </ul>
         </div>
     </div>
@@ -116,8 +116,8 @@ include("autres_pages/menu.php");
         </div>
         <div class="accordion-body">
             <ul>
-                <li><a href="#">13. How would you react if you heard a student disparage a musical style or an artist?</a> <span>00:00</span></li>
-                <li><a href="#">14. So, what advice would you give us to break down these stereotypes about a genre that prevent people from listening to it?</a> <span>00:00</span></li>
+                <li><a href="#">13. How would you react if you heard a student disparage a musical style or an artist?</a> <span>11:30</span></li>
+                <li><a href="#">14. So, what advice would you give us to break down these stereotypes about a genre that prevent people from listening to it?</a> <span>12:30</span></li>
             </ul>
         </div>
     </div>
