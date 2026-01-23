@@ -13,22 +13,25 @@ include("autres_pages/menu.php");
         <img class="img_disque" src="img/vinyl_magenta.png">
     </div>
     <h1 class="center_f">The interview</h1>
-    <p class="center_f">Now, let's dive into the complexity of musical genres. We met with an expert to understand why music unites us as much as it divides us. Click on the questions below to jump directly to the relevant part of the interview.</p>
+    <p class="center_f intro-text">
+        Now, let's dive into the complexity of musical genres. We met with an expert to understand why music unites us as much as it divides us. Click on the questions below to jump directly to the relevant part of the interview.
+    </p>
     <h1 class="center_f">Listen to an Expert</h1>
-    <h1 class="center_f">v</h1>
-    <iframe 
-  id="player" Now, let's dive into the complexity of musical genres. We met with an expert to understand why music unites us as much as it divides us. Click on the questions below to jump directly to the relevant part of the interview.
-  src="https://www.youtube.com/embed/EBgzNhHLTmA?si=428Qfkt442D_F2Pa&enablejsapi=1&cc_load_policy=1&controls=0" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen>
-</iframe>
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <iframe 
+            id="player" 
+            src="https://www.youtube.com/embed/EBgzNhHLTmA?si=428Qfkt442D_F2Pa&enablejsapi=1&cc_load_policy=1&cc_lang_pref=en" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
     <section class="question">
-    <h1 class="center_f">The questions</h1>
-    
-    <div class="accordion-item">
+        <h1 class="center_f">The questions</h1>
+        <div class="accordion-wrapper">
+        <div class="accordion-item">
         <div class="accordion-header">
             <div class="header-left">
                 <img class="arrow-icon" src="img/play.svg" alt="arrow">
@@ -64,15 +67,15 @@ include("autres_pages/menu.php");
             <ul>
                 <li>
                     <a href="#">5. What types of prejudices come up most often around different musical genres? </a>
-                    <span>4:58</span>
+                    <span>00:00</span>
                 </li>
                 <li>
                     <a href="#">6. Do you think this is a reality? Don't you think the prejudices come from the music itself? Or rather from the image conveyed by artists or the media?</a>
-                    <span>5:55</span>
+                    <span>00:00</span>
                 </li>
                 <li>
                     <a href="#">7. So, you think there are changes. But for you, for example, regarding rap, are there differences between the stereotypical image of rap today and the rap of the 90s?</a>
-                    <span>6:43</span>
+                    <span>00:00</span>
                 </li>
             </ul>
         </div>
@@ -91,11 +94,11 @@ include("autres_pages/menu.php");
         </div>
         <div class="accordion-body">
             <ul>
-                <li><a href="#">8. In your opinion, what place does music occupy in the lives of young people today?</a> <span>8:10</span></li>
-                <li><a href="#">9. And do you think that these young people have a different approach compared to older generations?</a> <span>8:44</span></li>
-                <li><a href="#">10. Do you also think that social media influences young people's musical tastes?</a> <span>8:55</span></li>
-                <li><a href="#">11. Okay. And the stereotypes and judgments that you often hear among young people regarding these styles, which ones do you hear most often?</a> <span>9:47</span></li>
-                <li><a href="#">12. On that question, you mentioned your classes. In your classes, have you noticed that music, on the other hand, can bring some of your students together?</a> <span>10:40</span></li>
+                <li><a href="#">8. In your opinion, what place does music occupy in the lives of young people today?</a> <span>00:00</span></li>
+                <li><a href="#">9. And do you think that these young people have a different approach compared to older generations?</a> <span>00:00</span></li>
+                <li><a href="#">10. Do you also think that social media influences young people's musical tastes?</a> <span>00:00</span></li>
+                <li><a href="#">11. Okay. And the stereotypes and judgments that you often hear among young people regarding these styles, which ones do you hear most often?</a> <span>00:00</span></li>
+                <li><a href="#">12. On that question, you mentioned your classes. In your classes, have you noticed that music, on the other hand, can bring some of your students together?</a> <span>00:00</span></li>
             </ul>
         </div>
     </div>
@@ -113,16 +116,16 @@ include("autres_pages/menu.php");
         </div>
         <div class="accordion-body">
             <ul>
-                <li><a href="#">13. How would you react if you heard a student disparage a musical style or an artist?</a> <span>11:30</span></li>
-                <li><a href="#">14. So, what advice would you give us to break down these stereotypes about a genre that prevent people from listening to it?</a> <span>12:30</span></li>
+                <li><a href="#">13. How would you react if you heard a student disparage a musical style or an artist?</a> <span>00:00</span></li>
+                <li><a href="#">14. So, what advice would you give us to break down these stereotypes about a genre that prevent people from listening to it?</a> <span>00:00</span></li>
             </ul>
         </div>
     </div>
 
-    <div class="center_f" style="margin-top: 40px;">
+    <div class="center_f" style="margin-top: 40px; margin-bottom: 40px;">
         <a href="game.php" class="btn-continuer">Continuer</a>
     </div>
-
+        </div>
 </section>
     <section class="music_note_vroum">
         <img class="speaker" src="img/enceinte.svg" alt="Enceinte">
