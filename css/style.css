@@ -658,34 +658,34 @@ footer div:last-child {
   bottom: 130px;
 }
 #interview .music_note_vroum .note:nth-child(1) {
-  animation: fly-right 4874ms linear infinite;
-  animation-delay: 2412ms;
-  width: 30px;
+  animation: fly-right 7659ms linear infinite;
+  animation-delay: 2699ms;
+  width: 27px;
 }
 #interview .music_note_vroum .note:nth-child(2) {
-  animation: fly-up 6887ms linear infinite;
-  animation-delay: 2048ms;
-  width: 25px;
+  animation: fly-up 6019ms linear infinite;
+  animation-delay: 760ms;
+  width: 46px;
 }
 #interview .music_note_vroum .note:nth-child(3) {
-  animation: fly-right 7198ms linear infinite;
-  animation-delay: 4719ms;
-  width: 34px;
+  animation: fly-right 4485ms linear infinite;
+  animation-delay: 1948ms;
+  width: 26px;
 }
 #interview .music_note_vroum .note:nth-child(4) {
-  animation: fly-up 6423ms linear infinite;
-  animation-delay: 4942ms;
-  width: 25px;
+  animation: fly-up 6484ms linear infinite;
+  animation-delay: 4619ms;
+  width: 21px;
 }
 #interview .music_note_vroum .note:nth-child(5) {
-  animation: fly-right 6054ms linear infinite;
-  animation-delay: 2165ms;
-  width: 25px;
+  animation: fly-right 5951ms linear infinite;
+  animation-delay: 980ms;
+  width: 47px;
 }
 #interview .music_note_vroum .note:nth-child(6) {
-  animation: fly-up 6573ms linear infinite;
-  animation-delay: 4589ms;
-  width: 28px;
+  animation: fly-up 4618ms linear infinite;
+  animation-delay: 1367ms;
+  width: 33px;
 }
 @keyframes fly-right {
   0% {
@@ -877,7 +877,166 @@ footer div:last-child {
   border: none;
   width: 95%;
 }
+#game #game-container {
+  text-align: center;
+  color: #fefbff;
+  padding-top: 100px;
+}
+#game #game-container .game-step {
+  display: none;
+}
+#game #game-container .game-step.active {
+  display: block;
+  animation: fadeIn 0.5s ease-out;
+}
+#game #game-container .music-tags {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px auto;
+  min-height: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
+  padding: 15px 30px;
+  width: fit-content;
+}
+#game #game-container .tag {
+  background-color: #ad49e1;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: grab;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#game #game-container .tag:hover {
+  background: #7a1cac;
+  transform: scale(1.05);
+}
+#game #game-container .characters-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+#game #game-container .char-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  width: 220px;
+  padding: 20px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+#game #game-container .char-card .char-img {
+  height: 240px;
+  background: #222;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+#game #game-container .char-card .char-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#game #game-container .char-card .drop-zone {
+  border: 2px dashed rgba(254, 251, 255, 0.3);
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#game #game-container .char-card .drop-zone span {
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+#game #game-container .char-card .drop-zone .tag {
+  width: 76%;
+  height: 60%;
+  position: absolute;
+  box-shadow: none;
+}
+#game #game-container .char-card .explanation {
+  display: none;
+  font-size: 0.85em;
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  line-height: 1.4;
+}
+#game #game-container .char-card.reveal .explanation {
+  display: block;
+  animation: slideDown 0.4s ease;
+}
+#game #game-container .char-card.reveal.correct {
+  border-color: #4CAF50;
+}
+#game #game-container .char-card.reveal.wrong {
+  border-color: #FF5252;
+}
+#game #game-container .extra-box {
+  display: none;
+  max-width: 600px;
+  margin: 20px auto 40px;
+  padding: 20px;
+  background: rgba(173, 73, 225, 0.1);
+  border-left: 5px solid #ad49e1;
+  border-radius: 10px;
+  text-align: left;
+}
+#game #game-container .extra-box h3 {
+  color: #ad49e1;
+  margin-bottom: 10px;
+}
+#game #game-container .extra-box p {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+#game #game-container .reveal-all .extra-box {
+  display: block;
+  animation: fadeIn 0.8s ease;
+}
+#game #game-container #verify-btn, #game #game-container #next-btn {
+  background: #ad49e1;
+  color: #fefbff;
+  padding: 15px 35px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: 0.3s;
+}
+#game #game-container #verify-btn:hover, #game #game-container #next-btn:hover {
+  background: #7a1cac;
+}
+#game #game-container #next-btn {
+  background: #4CAF50;
+}
 
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 #credit header nav {
   position: absolute;
   top: 0;
