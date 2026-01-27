@@ -17,12 +17,30 @@
             <div class="music-tags">
                 <div class="tag" draggable="true" data-style="rock">Rock</div>
                 <div class="tag" draggable="true" data-style="classique">Classique</div>
+                <div class="tag" draggable="true" data-style="rock">Rock</div>
+                <div class="tag" draggable="true" data-style="rock">Rock</div>
+                <div class="tag" draggable="true" data-style="rock">Rock</div>
             </div>
             <div class="characters-grid">
                 <div class="char-card" data-answer="rock">
                     <div class="char-img"><img src="img/perso1.png"></div>
                     <div class="drop-zone"><span>Déposez ici</span></div>
                     <div class="explanation">Le Rock est né dans les années 50, mélangeant blues et country.</div>
+                </div>
+                <div class="char-card" data-answer="classique">
+                    <div class="char-img"><img src="img/perso2.png"></div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>
+                    <div class="explanation">La musique classique désigne un répertoire savant ancré dans l'histoire européenne.</div>
+                </div>
+                <div class="char-card" data-answer="classique">
+                    <div class="char-img"><img src="img/perso2.png"></div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>
+                    <div class="explanation">La musique classique désigne un répertoire savant ancré dans l'histoire européenne.</div>
+                </div>
+                <div class="char-card" data-answer="classique">
+                    <div class="char-img"><img src="img/perso2.png"></div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>
+                    <div class="explanation">La musique classique désigne un répertoire savant ancré dans l'histoire européenne.</div>
                 </div>
                 <div class="char-card" data-answer="classique">
                     <div class="char-img"><img src="img/perso2.png"></div>
@@ -41,12 +59,30 @@
             <div class="music-tags">
                 <div class="tag" draggable="true" data-style="rap">Rap</div>
                 <div class="tag" draggable="true" data-style="techno">Techno</div>
+                <div class="tag" draggable="true" data-style="rock">Rock</div>
+                <div class="tag" draggable="true" data-style="rock">Rock</div>
+                <div class="tag" draggable="true" data-style="rock">Rock</div>
             </div>
             <div class="characters-grid">
                 <div class="char-card" data-answer="rap">
                     <div class="char-img"><img src="img/perso4.png"></div>
                     <div class="drop-zone"><span>Déposez ici</span></div>
                     <div class="explanation">Le Rap est une forme d'expression vocale appartenant au mouvement hip-hop.</div>
+                </div>
+                <div class="char-card" data-answer="techno">
+                    <div class="char-img"><img src="img/perso5.png"></div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>
+                    <div class="explanation">La Techno est née à Detroit, utilisant des synthétiseurs et des boîtes à rythmes.</div>
+                </div>
+                <div class="char-card" data-answer="techno">
+                    <div class="char-img"><img src="img/perso5.png"></div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>
+                    <div class="explanation">La Techno est née à Detroit, utilisant des synthétiseurs et des boîtes à rythmes.</div>
+                </div>
+                <div class="char-card" data-answer="techno">
+                    <div class="char-img"><img src="img/perso5.png"></div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>
+                    <div class="explanation">La Techno est née à Detroit, utilisant des synthétiseurs et des boîtes à rythmes.</div>
                 </div>
                 <div class="char-card" data-answer="techno">
                     <div class="char-img"><img src="img/perso5.png"></div>
@@ -64,8 +100,32 @@
             <p class="description">Étape 3/3 : La Puissance</p>
             <div class="music-tags">
                 <div class="tag" draggable="true" data-style="metal">Métal</div>
+                <div class="tag" draggable="true" data-style="rock">Rock</div>
+                <div class="tag" draggable="true" data-style="rock">Rock</div>
+                <div class="tag" draggable="true" data-style="rock">Rock</div>
+                <div class="tag" draggable="true" data-style="rock">Rock</div>
             </div>
             <div class="characters-grid">
+                <div class="char-card" data-answer="metal">
+                    <div class="char-img"><img src="img/perso6.png"></div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>
+                    <div class="explanation">Le Heavy Metal se caractérise par des guitares saturées et des rythmes denses.</div>
+                </div>
+                <div class="char-card" data-answer="metal">
+                    <div class="char-img"><img src="img/perso6.png"></div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>
+                    <div class="explanation">Le Heavy Metal se caractérise par des guitares saturées et des rythmes denses.</div>
+                </div>
+                <div class="char-card" data-answer="metal">
+                    <div class="char-img"><img src="img/perso6.png"></div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>
+                    <div class="explanation">Le Heavy Metal se caractérise par des guitares saturées et des rythmes denses.</div>
+                </div>
+                <div class="char-card" data-answer="metal">
+                    <div class="char-img"><img src="img/perso6.png"></div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>
+                    <div class="explanation">Le Heavy Metal se caractérise par des guitares saturées et des rythmes denses.</div>
+                </div>
                 <div class="char-card" data-answer="metal">
                     <div class="char-img"><img src="img/perso6.png"></div>
                     <div class="drop-zone"><span>Déposez ici</span></div>
