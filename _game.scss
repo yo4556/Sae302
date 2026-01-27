@@ -1,0 +1,151 @@
+
+#game {
+  header nav {
+    @extend .main-nav;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: none;
+    width: 95%;
+  }
+
+  #game-container {
+    text-align: center;
+    color: $white;
+    padding-top: 100px;
+
+    .game-step {
+      display: none;
+      &.active { display: block; animation: fadeIn 0.5s ease-out; }
+    }
+
+    .music-tags {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px auto;
+      min-height: 60px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50px;
+      padding: 15px 30px;
+      width: fit-content;
+    }
+
+    .tag {
+      background-color: $violet-tres-clair;
+      padding: 10px 25px;
+      border-radius: 25px;
+      cursor: grab;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover { background: $violet-clair; transform: scale(1.05); }
+    }
+
+    .characters-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 10px 20px 30px 20px;
+    }
+
+    .char-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      width: 220px;
+      padding: 20px;
+      border: 2px solid transparent;
+      transition: all 0.4s ease;
+
+      .char-img {
+        height: 340px;
+        background: #222;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; object-position: top;}
+      }
+
+      .char-img2 {
+        height: fit-content;
+        background: #222;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        img { width: 100%; object-fit: cover; border-radius: 10px; object-position: top; aspect-ratio: 1/1;}
+      }
+
+      .drop-zone {
+        border: 2px dashed rgba($white, 0.3);
+        height: 50px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        span { font-size: 0.8em; opacity: 0.5; }
+        .tag { width: 76%; height: 60%; position: absolute; box-shadow: none; }
+      }
+
+      .explanation {
+        display: none;
+        font-size: 0.85em;
+        margin-top: 15px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        line-height: 1.4;
+      }
+
+      &.reveal {
+        .explanation { display: block; animation: slideDown 0.4s ease; }
+        &.correct { border-color: #4CAF50; }
+        &.wrong { border-color: #FF5252; }
+      }
+    }
+
+    // LA NOUVELLE BOX EN DESSOUS
+    .extra-box {
+      display: none;
+      max-width: 600px;
+      margin: 20px auto 40px;
+      padding: 20px;
+      background: rgba($violet-tres-clair, 0.1);
+      border-left: 5px solid $violet-tres-clair;
+      border-radius: 10px;
+      text-align: left;
+      h3 { color: $violet-tres-clair; margin-bottom: 10px; }
+      p { font-size: 0.95em; line-height: 1.5; }
+    }
+
+    .reveal-all .extra-box {
+      display: block;
+      animation: fadeIn 0.8s ease;
+    }
+
+    #verify-btn, #next-btn {
+      background: $violet-tres-clair;
+      color: $white;
+      padding: 15px 35px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1em;
+      transition: 0.3s;
+      &:hover { background: $violet-clair; }
+    }
+
+    #next-btn { background: #4CAF50; }
+  }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
