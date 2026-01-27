@@ -14,7 +14,7 @@ body {
   background-attachment: fixed;
 }
 
-.main-nav, #credit header nav, #game header nav, #interview header nav, #social header nav, #index header nav {
+.main-nav, #end header nav, #game header nav, #interview header nav, #social header nav, #index header nav {
   position: absolute;
   top: 30px;
   left: 50%;
@@ -30,24 +30,24 @@ body {
   transition: all 0.5s ease-in-out;
   z-index: 1000;
 }
-.main-nav div, #credit header nav div, #game header nav div, #interview header nav div, #social header nav div, #index header nav div {
+.main-nav div, #end header nav div, #game header nav div, #interview header nav div, #social header nav div, #index header nav div {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.main-nav ul, #credit header nav ul, #game header nav ul, #interview header nav ul, #social header nav ul, #index header nav ul {
+.main-nav ul, #end header nav ul, #game header nav ul, #interview header nav ul, #social header nav ul, #index header nav ul {
   display: flex;
   gap: 40px;
   margin: 0;
   list-style: none;
 }
-.main-nav ul a, #credit header nav ul a, #game header nav ul a, #interview header nav ul a, #social header nav ul a, #index header nav ul a {
+.main-nav ul a, #end header nav ul a, #game header nav ul a, #interview header nav ul a, #social header nav ul a, #index header nav ul a {
   color: #fefbff;
   text-decoration: none;
   font-size: 1em;
   font-weight: bold;
 }
-.main-nav ul a:active, #credit header nav ul a:active, #game header nav ul a:active, #interview header nav ul a:active, #social header nav ul a:active, #index header nav ul a:active, .main-nav ul a:hover, #credit header nav ul a:hover, #game header nav ul a:hover, #interview header nav ul a:hover, #social header nav ul a:hover, #index header nav ul a:hover {
+.main-nav ul a:active, #end header nav ul a:active, #game header nav ul a:active, #interview header nav ul a:active, #social header nav ul a:active, #index header nav ul a:active, .main-nav ul a:hover, #end header nav ul a:hover, #game header nav ul a:hover, #interview header nav ul a:hover, #social header nav ul a:hover, #index header nav ul a:hover {
   text-decoration: underline;
 }
 
@@ -226,7 +226,7 @@ body {
   background-attachment: fixed;
 }
 
-.main-nav, #credit header nav, #game header nav, #interview header nav, #social header nav, #index header nav {
+.main-nav, #end header nav, #game header nav, #interview header nav, #social header nav, #index header nav {
   position: absolute;
   top: 30px;
   left: 50%;
@@ -242,24 +242,24 @@ body {
   transition: all 0.5s ease-in-out;
   z-index: 1000;
 }
-.main-nav div, #credit header nav div, #game header nav div, #interview header nav div, #social header nav div, #index header nav div {
+.main-nav div, #end header nav div, #game header nav div, #interview header nav div, #social header nav div, #index header nav div {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.main-nav ul, #credit header nav ul, #game header nav ul, #interview header nav ul, #social header nav ul, #index header nav ul {
+.main-nav ul, #end header nav ul, #game header nav ul, #interview header nav ul, #social header nav ul, #index header nav ul {
   display: flex;
   gap: 40px;
   margin: 0;
   list-style: none;
 }
-.main-nav ul a, #credit header nav ul a, #game header nav ul a, #interview header nav ul a, #social header nav ul a, #index header nav ul a {
+.main-nav ul a, #end header nav ul a, #game header nav ul a, #interview header nav ul a, #social header nav ul a, #index header nav ul a {
   color: #fefbff;
   text-decoration: none;
   font-size: 1em;
   font-weight: bold;
 }
-.main-nav ul a:active, #credit header nav ul a:active, #game header nav ul a:active, #interview header nav ul a:active, #social header nav ul a:active, #index header nav ul a:active, .main-nav ul a:hover, #credit header nav ul a:hover, #game header nav ul a:hover, #interview header nav ul a:hover, #social header nav ul a:hover, #index header nav ul a:hover {
+.main-nav ul a:active, #end header nav ul a:active, #game header nav ul a:active, #interview header nav ul a:active, #social header nav ul a:active, #index header nav ul a:active, .main-nav ul a:hover, #end header nav ul a:hover, #game header nav ul a:hover, #interview header nav ul a:hover, #social header nav ul a:hover, #index header nav ul a:hover {
   text-decoration: underline;
 }
 
@@ -707,34 +707,34 @@ footer div:last-child {
   bottom: 130px;
 }
 #interview .music_note_vroum .note:nth-child(1) {
-  animation: fly-right 7239ms linear infinite;
-  animation-delay: 1500ms;
-  width: 25px;
+  animation: fly-right 7436ms linear infinite;
+  animation-delay: 3698ms;
+  width: 40px;
 }
 #interview .music_note_vroum .note:nth-child(2) {
-  animation: fly-up 5783ms linear infinite;
-  animation-delay: 3195ms;
-  width: 29px;
+  animation: fly-up 6793ms linear infinite;
+  animation-delay: 3298ms;
+  width: 48px;
 }
 #interview .music_note_vroum .note:nth-child(3) {
-  animation: fly-right 6772ms linear infinite;
-  animation-delay: 1636ms;
-  width: 47px;
+  animation: fly-right 6873ms linear infinite;
+  animation-delay: 1622ms;
+  width: 43px;
 }
 #interview .music_note_vroum .note:nth-child(4) {
-  animation: fly-up 6068ms linear infinite;
-  animation-delay: 3293ms;
-  width: 44px;
+  animation: fly-up 7432ms linear infinite;
+  animation-delay: 2907ms;
+  width: 27px;
 }
 #interview .music_note_vroum .note:nth-child(5) {
-  animation: fly-right 5231ms linear infinite;
-  animation-delay: 1849ms;
-  width: 29px;
+  animation: fly-right 5411ms linear infinite;
+  animation-delay: 2904ms;
+  width: 36px;
 }
 #interview .music_note_vroum .note:nth-child(6) {
-  animation: fly-up 6933ms linear infinite;
-  animation-delay: 1468ms;
-  width: 41px;
+  animation: fly-up 5936ms linear infinite;
+  animation-delay: 3174ms;
+  width: 28px;
 }
 @keyframes fly-right {
   0% {
@@ -1086,12 +1086,57 @@ footer div:last-child {
     opacity: 1;
   }
 }
-#credit header nav {
+#end {
+  overflow-x: hidden;
+}
+#end header nav {
   position: absolute;
   top: 0;
   left: 50%;
   border: none;
   width: 95%;
+}
+#end main {
+  color: white;
+  margin-top: 25vh;
+  padding: 0 20px;
+  text-align: center;
+}
+#end main h1 {
+  font-size: 50px;
+}
+#end main p {
+  display: flex;
+  justify-self: center;
+  width: 60%;
+  text-align: justify;
+  color: #fefbff;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 20px auto 20px;
+}
+#end main h3 {
+  font-size: 30px;
+}
+#end main #us {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#end main #us img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin: 25px auto 25px;
+}
+#end main .p-us {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+#end main .p-us:last-child {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
