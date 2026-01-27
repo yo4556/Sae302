@@ -31,35 +31,35 @@ include("autres_pages/menu.php");
     <section class="question">
         <h1 class="center_f">The questions</h1>
         <div class="accordion-wrapper">
-        <div class="accordion-item">
-        <div class="accordion-header">
-            <div class="header-left">
-                <img class="arrow-icon" src="img/play.svg" alt="arrow">
-                <div class="header-text">
-                    <h2>Music in General - Questions 1 to 4</h2>
-                    <p>Stereo-music</p>
-                </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="header-left">
+                        <img class="arrow-icon" src="img/play.svg" alt="arrow">
+                        <div class="header-text">
+                            <h2>Music in General - Questions 1 to 4</h2>
+                            <p>Stereo-music</p>
+                        </div>
+                    </div>
+                <span class="duration">3:14</span>
             </div>
-            <span class="duration">3:14</span>
+            <div class="accordion-body">
+                <ul>
+                    <li><a href="#">1. Would you say that music today unites more than it divides?</a> <span>00:23</span></li>
+                    <li><a href="#">2. Why do certain musical genres become markers of identity or belonging to a group?</a> <span>01:24</span></li>
+                    <li><a href="#">3. Do you think there's a difference in behavior among concertgoers of one style versus another?</a> <span>02:17</span></li>
+                    <li><a href="#">4. Do the phenomena of musical styles influencing each other create new connections between communities?</a> <span>03:37</span></li>
+                </ul>
+            </div>
         </div>
-        <div class="accordion-body">
-            <ul>
-                <li><a href="#">1. Would you say that music today unites more than it divides?</a> <span>00:23</span></li>
-                <li><a href="#">2. Why do certain musical genres become markers of identity or belonging to a group?</a> <span>01:24</span></li>
-                <li><a href="#">3. Do you think there's a difference in behavior among concertgoers of one style versus another?</a> <span>02:17</span></li>
-                <li><a href="#">4. Do the phenomena of musical styles influencing each other create new connections between communities?</a> <span>03:37</span></li>
-            </ul>
-        </div>
-    </div>
 
     <div class="accordion-item">
         <div class="accordion-header">
             <div class="header-left">
                 <img class="arrow-icon" src="img/play.svg" alt="arrow">
-                <div class="header-text">
-                    <h2>Prejudices and stereotypes - Questions 5 to 7</h2>
-                    <p>Stereo-music</p>
-                </div>
+                    <div class="header-text">
+                        <h2>Prejudices and stereotypes - Questions 5 to 7</h2>
+                        <p>Stereo-music</p>
+                    </div>
             </div>
             <span class="duration">9:12</span>
         </div>
@@ -125,7 +125,7 @@ include("autres_pages/menu.php");
     <div class="center_f" style="margin-top: 40px; margin-bottom: 40px;">
         <a href="game.php" class="btn-continuer">Continuer</a>
     </div>
-        </div>
+</div>
 </section>
     <section class="music_note_vroum">
         <img class="speaker" src="img/enceinte.svg" alt="Enceinte">
