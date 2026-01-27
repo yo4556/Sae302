@@ -123,7 +123,7 @@ include("autres_pages/menu.php");
     </div>
 
     <div class="center_f" style="margin-top: 40px; margin-bottom: 40px;">
-        <a href="game.php" class="btn-continuer">Continuer</a>
+        <a href="game.php" class="btn-continuer">Continue</a>
     </div>
 </div>
 </section>

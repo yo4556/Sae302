@@ -25,21 +25,50 @@
     
     p{
       text-align: justify;
-      width: 100%;
+      width: 90%;
+      font-size: 24px;
+      margin: 15px auto 10px;
     }
 
-    #content{
-      width: 100%;
+    .content{
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      margin: 15px auto 10px;
 
       p{
         text-align: justify;
-        width: 80%;
+        width: 70%;
+        height: 100%;
+        align-self: center;
       }
 
       img{
-        border-radius: 50px;
+        border-radius: 50%;
         overflow: hidden;
+        width: 25%;
+        aspect-ratio: 1/1;
+        background-color: gray;
+
       }
+    }
+    #content-2{
+        p{
+          width: 60%;
+        }
+
+        #square{
+        border-radius: 15px;
+        width: 35%;
+        height: 243px;
+        }
+      }
+    #solo{
+      margin: 15px auto 10px;
+      width: 50%;
+      background-color: gray;
+      aspect-ratio: 16/9;
+      border-radius: 15px;
     }
   }
 }
