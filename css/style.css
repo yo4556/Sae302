@@ -707,34 +707,34 @@ footer div:last-child {
   bottom: 130px;
 }
 #interview .music_note_vroum .note:nth-child(1) {
-  animation: fly-right 7436ms linear infinite;
-  animation-delay: 3698ms;
-  width: 40px;
+  animation: fly-right 6420ms linear infinite;
+  animation-delay: 241ms;
+  width: 38px;
 }
 #interview .music_note_vroum .note:nth-child(2) {
-  animation: fly-up 6793ms linear infinite;
-  animation-delay: 3298ms;
-  width: 48px;
+  animation: fly-up 6479ms linear infinite;
+  animation-delay: 4172ms;
+  width: 39px;
 }
 #interview .music_note_vroum .note:nth-child(3) {
-  animation: fly-right 6873ms linear infinite;
-  animation-delay: 1622ms;
-  width: 43px;
+  animation: fly-right 6397ms linear infinite;
+  animation-delay: 2991ms;
+  width: 21px;
 }
 #interview .music_note_vroum .note:nth-child(4) {
-  animation: fly-up 7432ms linear infinite;
-  animation-delay: 2907ms;
-  width: 27px;
+  animation: fly-up 4864ms linear infinite;
+  animation-delay: 4026ms;
+  width: 30px;
 }
 #interview .music_note_vroum .note:nth-child(5) {
-  animation: fly-right 5411ms linear infinite;
-  animation-delay: 2904ms;
-  width: 36px;
+  animation: fly-right 5540ms linear infinite;
+  animation-delay: 4311ms;
+  width: 25px;
 }
 #interview .music_note_vroum .note:nth-child(6) {
-  animation: fly-up 5936ms linear infinite;
-  animation-delay: 3174ms;
-  width: 28px;
+  animation: fly-up 5425ms linear infinite;
+  animation-delay: 1078ms;
+  width: 43px;
 }
 @keyframes fly-right {
   0% {
