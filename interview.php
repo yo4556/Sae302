@@ -14,7 +14,7 @@ include("autres_pages/menu.php");
     </div>
     <h1 class="center_f">The interview</h1>
     <p class="center_f intro-text">
-        Now, let's dive into the complexity of musical genres. We met with an expert to understand why music unites us as much as it divides us. Click on the questions below to jump directly to the relevant part of the interview.
+        Come discover an exclusive interview we had the chance to film, in a private studio space with a music & sound technician teacher. As the camera rolled, the atmosphere became more personal and natural. The interview evolved into a real conversation, guided by our questions, but driven by the witness's enthusiasm and the energy of the exchange. Together, we explored topics such as community, youth culture, stereotypes and the ways music and our interactions with it are evolving today.
     </p>
     <h1 class="center_f">Listen to an Expert</h1>
     <div style="display: flex; justify-content: center; width: 100%;">
