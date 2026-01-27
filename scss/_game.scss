@@ -1,3 +1,4 @@
+
 #game {
   header nav {
     @extend .main-nav;
@@ -46,8 +47,8 @@
     .characters-grid {
       display: flex;
       justify-content: center;
-      gap: 30px;
-      margin-bottom: 30px;
+      gap: 20px;
+      margin: 10px 20px 30px 20px;
     }
 
     .char-card {
@@ -59,11 +60,19 @@
       transition: all 0.4s ease;
 
       .char-img {
-        height: 240px;
+        height: 340px;
         background: #222;
         border-radius: 15px;
         margin-bottom: 15px;
-        img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; }
+        img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; object-position: top;}
+      }
+
+      .char-img2 {
+        height: fit-content;
+        background: #222;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        img { width: 100%; object-fit: cover; border-radius: 10px; object-position: top; aspect-ratio: 1/1;}
       }
 
       .drop-zone {

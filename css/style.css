@@ -707,34 +707,34 @@ footer div:last-child {
   bottom: 130px;
 }
 #interview .music_note_vroum .note:nth-child(1) {
-  animation: fly-right 6420ms linear infinite;
-  animation-delay: 241ms;
-  width: 38px;
+  animation: fly-right 4914ms linear infinite;
+  animation-delay: 1937ms;
+  width: 44px;
 }
 #interview .music_note_vroum .note:nth-child(2) {
-  animation: fly-up 6479ms linear infinite;
-  animation-delay: 4172ms;
-  width: 39px;
+  animation: fly-up 4057ms linear infinite;
+  animation-delay: 1461ms;
+  width: 34px;
 }
 #interview .music_note_vroum .note:nth-child(3) {
-  animation: fly-right 6397ms linear infinite;
-  animation-delay: 2991ms;
-  width: 21px;
+  animation: fly-right 5308ms linear infinite;
+  animation-delay: 3339ms;
+  width: 26px;
 }
 #interview .music_note_vroum .note:nth-child(4) {
-  animation: fly-up 4864ms linear infinite;
-  animation-delay: 4026ms;
-  width: 30px;
+  animation: fly-up 7127ms linear infinite;
+  animation-delay: 2093ms;
+  width: 27px;
 }
 #interview .music_note_vroum .note:nth-child(5) {
-  animation: fly-right 5540ms linear infinite;
-  animation-delay: 4311ms;
-  width: 25px;
+  animation: fly-right 4891ms linear infinite;
+  animation-delay: 1754ms;
+  width: 48px;
 }
 #interview .music_note_vroum .note:nth-child(6) {
-  animation: fly-up 5425ms linear infinite;
-  animation-delay: 1078ms;
-  width: 43px;
+  animation: fly-up 7725ms linear infinite;
+  animation-delay: 447ms;
+  width: 29px;
 }
 @keyframes fly-right {
   0% {
@@ -967,8 +967,8 @@ footer div:last-child {
 #game #game-container .characters-grid {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 30px;
+  gap: 20px;
+  margin: 10px 20px 30px 20px;
 }
 #game #game-container .char-card {
   background: rgba(255, 255, 255, 0.08);
@@ -979,7 +979,7 @@ footer div:last-child {
   transition: all 0.4s ease;
 }
 #game #game-container .char-card .char-img {
-  height: 240px;
+  height: 340px;
   background: #222;
   border-radius: 15px;
   margin-bottom: 15px;
@@ -989,6 +989,20 @@ footer div:last-child {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  object-position: top;
+}
+#game #game-container .char-card .char-img2 {
+  height: fit-content;
+  background: #222;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+#game #game-container .char-card .char-img2 img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  object-position: top;
+  aspect-ratio: 1/1;
 }
 #game #game-container .char-card .drop-zone {
   border: 2px dashed rgba(254, 251, 255, 0.3);
