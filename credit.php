@@ -18,15 +18,15 @@ include("autres_pages/menu.php");
     <h3>Thank you for reading</h3>
 
     <div id="us">
-        <img src="img/" alt="Enzo Richand">
-        <img src="img/" alt="Lauren Lamoureux">
-        <img src="img/" alt="Etan Laurent">
-        <img src="img/" alt="Yoan Deloustal">
-        <img src="img/" alt="Hugo Noblot">
+        <img src="img/enzo_vous.png" alt="Enzo Richand">
+        <img src="img/lauren_vous.png" alt="Lauren Lamoureux">
+        <img src="img/etan_vous.png" alt="Etan Laurent">
+        <img src="img/yoan_vous.png" alt="Yoan Deloustal">
+        <img src="img/hugo_vous.png" alt="Hugo Noblot">
     </div>
 
     <p class="p-us">Made by<br>RICHAND Enzo - LAMOUREUX Lauren - LAURENT Etan - DELOUSTAL Yoan - Noblot Hugo</p>
-    <p class="p-us">Bibliography</p>
+    <p class="p-us"><a href="biblio.php">Bibliography</a></p>
 
 </main>
 
