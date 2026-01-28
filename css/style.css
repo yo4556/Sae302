@@ -748,34 +748,34 @@ footer div:last-child {
   bottom: 130px;
 }
 #interview .music_note_vroum .note:nth-child(1) {
-  animation: fly-right 7753ms linear infinite;
-  animation-delay: 928ms;
-  width: 33px;
+  animation: fly-right 4782ms linear infinite;
+  animation-delay: 168ms;
+  width: 40px;
 }
 #interview .music_note_vroum .note:nth-child(2) {
-  animation: fly-up 4491ms linear infinite;
-  animation-delay: 2057ms;
-  width: 29px;
+  animation: fly-up 7031ms linear infinite;
+  animation-delay: 2151ms;
+  width: 25px;
 }
 #interview .music_note_vroum .note:nth-child(3) {
-  animation: fly-right 7308ms linear infinite;
-  animation-delay: 4646ms;
-  width: 29px;
-}
-#interview .music_note_vroum .note:nth-child(4) {
-  animation: fly-up 7240ms linear infinite;
-  animation-delay: 2776ms;
-  width: 24px;
-}
-#interview .music_note_vroum .note:nth-child(5) {
-  animation: fly-right 7735ms linear infinite;
-  animation-delay: 3724ms;
+  animation: fly-right 6591ms linear infinite;
+  animation-delay: 2889ms;
   width: 35px;
 }
+#interview .music_note_vroum .note:nth-child(4) {
+  animation: fly-up 7382ms linear infinite;
+  animation-delay: 4763ms;
+  width: 39px;
+}
+#interview .music_note_vroum .note:nth-child(5) {
+  animation: fly-right 4369ms linear infinite;
+  animation-delay: 1210ms;
+  width: 28px;
+}
 #interview .music_note_vroum .note:nth-child(6) {
-  animation: fly-up 6234ms linear infinite;
-  animation-delay: 2504ms;
-  width: 50px;
+  animation: fly-up 4630ms linear infinite;
+  animation-delay: 4163ms;
+  width: 35px;
 }
 @keyframes fly-right {
   0% {
@@ -1017,7 +1017,10 @@ footer div:last-child {
   width: 220px;
   padding: 20px;
   border: 2px solid transparent;
-  transition: all 0.4s ease;
+  transition: transform 0.4s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 #game #game-container .char-card .char-img {
   height: 340px;
@@ -1066,22 +1069,48 @@ footer div:last-child {
 }
 #game #game-container .char-card .explanation {
   display: none;
-  font-size: 0.85em;
+  position: relative;
   margin-top: 15px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  font-size: 0.85em;
   line-height: 1.4;
+  height: 60px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: help;
+}
+#game #game-container .char-card .explanation::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  transition: opacity 0.5s;
 }
 #game #game-container .char-card.reveal .explanation {
   display: block;
-  animation: slideDown 0.4s ease;
+  animation: slideDown 0.9s ease-in-out;
 }
-#game #game-container .char-card.reveal.correct {
-  border-color: #4CAF50;
+#game #game-container .char-card.reveal:hover {
+  z-index: 100;
 }
-#game #game-container .char-card.reveal.wrong {
-  border-color: #FF5252;
+#game #game-container .char-card.reveal:hover .explanation {
+  height: auto;
+  min-height: 60px;
+  position: absolute;
+  top: 80%;
+  left: 10px;
+  right: 10px;
+  background: rgba(20, 20, 20, 0.98);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
+}
+#game #game-container .char-card.reveal:hover .explanation::after {
+  opacity: 0;
 }
 #game #game-container .extra-box {
   display: none;
@@ -1105,7 +1134,7 @@ footer div:last-child {
   display: block;
   animation: fadeIn 0.8s ease;
 }
-#game #game-container #verify-btn, #game #game-container #next-btn {
+#game #game-container #verify-btn, #game #game-container #next-btn, #game #game-container #credits-btn {
   background: #ad49e1;
   color: #fefbff;
   padding: 15px 35px;
@@ -1115,12 +1144,34 @@ footer div:last-child {
   font-weight: bold;
   font-size: 1em;
   transition: 0.3s;
+  text-decoration: none;
 }
-#game #game-container #verify-btn:hover, #game #game-container #next-btn:hover {
+#game #game-container #verify-btn:hover, #game #game-container #next-btn:hover, #game #game-container #credits-btn:hover {
   background: #7a1cac;
 }
 #game #game-container #next-btn {
   background: #4CAF50;
+}
+#game .description {
+  margin: 20px 20% 0px 20%;
+}
+#game #credits-btn {
+  display: none;
+  text-decoration: none;
+}
+#game #credits-btn button {
+  background: transparent;
+  border: 2px solid #ad49e1;
+  color: #fefbff;
+  padding: 15px 35px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#game #credits-btn button:hover {
+  background: #ad49e1;
+  color: #fefbff;
 }
 
 @keyframes slideDown {
