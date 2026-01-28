@@ -496,54 +496,74 @@ footer div:last-child {
   width: 95%;
 }
 #social main {
-  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 25vh auto 0;
 }
 #social main h1 {
-  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+}
+#social main h1.center_f {
+  font-size: 3rem;
+  margin-bottom: 60px;
 }
 #social main p {
   text-align: justify;
-  width: 90%;
-  font-size: 24px;
-  margin: 15px auto 10px;
+  width: 1080px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 15px 0 30px 0;
+  color: #e0e0e0;
+}
+#social main section {
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#social main section h1 {
+  text-align: start;
 }
 #social main .content {
   width: 90%;
   display: flex;
-  justify-content: space-between;
-  margin: 15px auto 10px;
-}
-#social main .content p {
-  text-align: justify;
-  width: 70%;
-  height: 100%;
-  align-self: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  margin: 20px 0;
 }
 #social main .content img {
+  display: block;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  overflow: hidden;
-  width: 25%;
-  aspect-ratio: 1/1;
-  background-color: gray;
+  background-color: #808080;
+  object-fit: cover;
+  flex-shrink: 0;
 }
-#social main #content-2 p {
-  width: 60%;
+#social main .content p {
+  width: auto;
+  margin: 0;
+  text-align: left;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #fff;
 }
-#social main #content-2 #square {
-  border-radius: 15px;
-  width: 35%;
-  height: 243px;
-}
-#social main #solo {
-  margin: 15px auto 10px;
-  width: 50%;
-  background-color: gray;
-  aspect-ratio: 16/9;
-  border-radius: 15px;
+#social main .btn-continuer {
+  margin-top: 40px;
+  color: white;
+  text-decoration: underline;
+  font-size: 1.2rem;
 }
 
 #interview {
@@ -612,13 +632,12 @@ footer div:last-child {
   right: 102px;
   top: 70px;
   width: 150px;
-  z-index: 5;
+  z-index: -2;
 }
 #interview .disque .img_disque {
   width: 500px;
   height: 500px;
   object-fit: contain;
-  filter: drop-shadow(0 0 20px rgba(169, 5, 103, 0.5));
   animation: spin 8s linear infinite;
 }
 @keyframes spin {
@@ -707,34 +726,34 @@ footer div:last-child {
   bottom: 130px;
 }
 #interview .music_note_vroum .note:nth-child(1) {
-  animation: fly-right 4914ms linear infinite;
-  animation-delay: 1937ms;
-  width: 44px;
+  animation: fly-right 7828ms linear infinite;
+  animation-delay: 3426ms;
+  width: 23px;
 }
 #interview .music_note_vroum .note:nth-child(2) {
-  animation: fly-up 4057ms linear infinite;
-  animation-delay: 1461ms;
-  width: 34px;
+  animation: fly-up 7098ms linear infinite;
+  animation-delay: 4711ms;
+  width: 38px;
 }
 #interview .music_note_vroum .note:nth-child(3) {
-  animation: fly-right 5308ms linear infinite;
-  animation-delay: 3339ms;
-  width: 26px;
+  animation: fly-right 5119ms linear infinite;
+  animation-delay: 2605ms;
+  width: 33px;
 }
 #interview .music_note_vroum .note:nth-child(4) {
-  animation: fly-up 7127ms linear infinite;
-  animation-delay: 2093ms;
-  width: 27px;
+  animation: fly-up 6492ms linear infinite;
+  animation-delay: 921ms;
+  width: 50px;
 }
 #interview .music_note_vroum .note:nth-child(5) {
-  animation: fly-right 4891ms linear infinite;
-  animation-delay: 1754ms;
+  animation: fly-right 5310ms linear infinite;
+  animation-delay: 1334ms;
   width: 48px;
 }
 #interview .music_note_vroum .note:nth-child(6) {
-  animation: fly-up 7725ms linear infinite;
-  animation-delay: 447ms;
-  width: 29px;
+  animation: fly-up 4644ms linear infinite;
+  animation-delay: 2955ms;
+  width: 28px;
 }
 @keyframes fly-right {
   0% {
