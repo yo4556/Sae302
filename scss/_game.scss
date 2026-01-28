@@ -57,7 +57,10 @@
       width: 220px;
       padding: 20px;
       border: 2px solid transparent;
-      transition: all 0.4s ease;
+      transition: transform 0.4s ease;
+      position: relative;
+      display: flex;
+      flex-direction: column;
 
       .char-img {
         height: 340px;
@@ -88,21 +91,62 @@
       }
 
       .explanation {
-        display: none;
-        font-size: 0.85em;
-        margin-top: 15px;
-        padding: 10px;
-        background: rgba(0, 0, 0, 0.4);
-        border-radius: 10px;
-        line-height: 1.4;
-      }
+    display: none; // Caché avant le bouton "Vérifier"
+    position: relative;
+    margin-top: 15px;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    font-size: 0.85em;
+    line-height: 1.4;
+    
+    // État tronqué par défaut
+    height: 60px; 
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: help;
 
-      &.reveal {
-        .explanation { display: block; animation: slideDown 0.4s ease; }
-        &.correct { border-color: #4CAF50; }
-        &.wrong { border-color: #FF5252; }
+    // Dégradé pour indiquer qu'il y a une suite
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 30px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+      transition: opacity 0.5s;
+    }
+  }
+
+  &.reveal {
+    .explanation { 
+      display: block; // Apparaît après vérification
+      animation: slideDown 0.9s ease-in-out; 
+    }
+
+    // L'effet d'ouverture au Hover
+    &:hover {
+      z-index: 100; // Passe au dessus des autres cartes
+
+      .explanation {
+        height: auto; // Prend toute la place nécessaire
+        min-height: 60px;
+        position: absolute; // Sort du flux pour ne pas déformer la carte
+        top: 80%; // S'ajuste selon votre layout
+        left: 10px;
+        right: 10px;
+        background: rgba(20, 20, 20, 0.98);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        padding-bottom: 20px;
+
+        &::after {
+          opacity: 0; // Enlève le dégradé quand c'est ouvert
+        }
       }
     }
+  }
+}
 
     // LA NOUVELLE BOX EN DESSOUS
     .extra-box {
@@ -123,7 +167,7 @@
       animation: fadeIn 0.8s ease;
     }
 
-    #verify-btn, #next-btn {
+    #verify-btn, #next-btn, #credits-btn {
       background: $violet-tres-clair;
       color: $white;
       padding: 15px 35px;
@@ -133,11 +177,35 @@
       font-weight: bold;
       font-size: 1em;
       transition: 0.3s;
+      text-decoration: none;
       &:hover { background: $violet-clair; }
     }
 
     #next-btn { background: #4CAF50; }
   }
+  .description{
+    margin: 20px 20% 0px 20%;
+  }
+  #credits-btn {
+    display: none; // Caché par défaut via JS ou style inline
+    text-decoration: none;
+    
+    button {
+        background: transparent;
+        border: 2px solid $violet-tres-clair;
+        color: $white;
+        padding: 15px 35px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+
+        &:hover {
+            background: $violet-tres-clair;
+            color: $white;
+        }
+    }
+}
 }
 
 @keyframes slideDown {
