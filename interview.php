@@ -10,7 +10,7 @@ include("autres_pages/menu.php");
 </header>
 <main id="main">
     <div class="disque">
-        <img class="img_disque" src="img/vinyl_magenta.png">
+        <img class="img_disque" src="img/vinyl_magenta.png" alt="Vinyl record">
     </div>
     <h1 class="center_f">The interview</h1>
     <p class="center_f intro-text">
@@ -131,12 +131,12 @@ include("autres_pages/menu.php");
         <img class="speaker" src="img/enceinte.svg" alt="Enceinte">
     
     <div class="notes-container">
-        <img class="note" src="img/une_note.png">
-        <img class="note" src="img/deux_notes.png">
-        <img class="note" src="img/une_note.png">
-        <img class="note" src="img/deux_notes.png">
-        <img class="note" src="img/une_note.png">
-        <img class="note" src="img/deux_notes.png">
+        <img class="note" src="img/une_note.png" alt="Musical note">
+        <img class="note" src="img/deux_notes.png" alt="Two musical notes">
+        <img class="note" src="img/une_note.png" alt="Musical note">
+        <img class="note" src="img/deux_notes.png" alt="Two musical notes">
+        <img class="note" src="img/une_note.png" alt="Musical note">
+        <img class="note" src="img/deux_notes.png" alt="Two musical notes">
     </div>
     </section>
 </main>
