@@ -70,6 +70,7 @@ include("autres_pages/menu.php");
     <section id="section-conclusion">
         <h1>Conclusion : The Human Harmony of Noise</h1>
         <p>The industrialization of music began with the phonograph but was transformed by the radio in the 1930s. The rise of the "Teenager" as a specific market in the 1950s led the industry to focus on mass-produced "hits". By the 1970s, music was often treated as a standardized commodity.</p>
+        <p>*(our translation)</p>
     </section>
 
 
