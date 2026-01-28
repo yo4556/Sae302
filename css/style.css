@@ -463,7 +463,6 @@ footer div:last-child {
   padding: 2em;
 }
 #index main section > div:first-child p {
-  font-family: "Inria Serif", serif;
   width: 70%;
   text-align: justify;
   color: #fefbff;
@@ -748,34 +747,34 @@ footer div:last-child {
   bottom: 130px;
 }
 #interview .music_note_vroum .note:nth-child(1) {
-  animation: fly-right 4782ms linear infinite;
-  animation-delay: 168ms;
-  width: 40px;
+  animation: fly-right 6575ms linear infinite;
+  animation-delay: 794ms;
+  width: 43px;
 }
 #interview .music_note_vroum .note:nth-child(2) {
-  animation: fly-up 7031ms linear infinite;
-  animation-delay: 2151ms;
-  width: 25px;
+  animation: fly-up 4700ms linear infinite;
+  animation-delay: 2288ms;
+  width: 26px;
 }
 #interview .music_note_vroum .note:nth-child(3) {
-  animation: fly-right 6591ms linear infinite;
-  animation-delay: 2889ms;
-  width: 35px;
+  animation: fly-right 6692ms linear infinite;
+  animation-delay: 1859ms;
+  width: 29px;
 }
 #interview .music_note_vroum .note:nth-child(4) {
-  animation: fly-up 7382ms linear infinite;
-  animation-delay: 4763ms;
+  animation: fly-up 7921ms linear infinite;
+  animation-delay: 4562ms;
   width: 39px;
 }
 #interview .music_note_vroum .note:nth-child(5) {
-  animation: fly-right 4369ms linear infinite;
-  animation-delay: 1210ms;
-  width: 28px;
+  animation: fly-right 6834ms linear infinite;
+  animation-delay: 1861ms;
+  width: 24px;
 }
 #interview .music_note_vroum .note:nth-child(6) {
-  animation: fly-up 4630ms linear infinite;
-  animation-delay: 4163ms;
-  width: 35px;
+  animation: fly-up 4732ms linear infinite;
+  animation-delay: 897ms;
+  width: 44px;
 }
 @keyframes fly-right {
   0% {
@@ -1021,6 +1020,23 @@ footer div:last-child {
   position: relative;
   display: flex;
   flex-direction: column;
+  transition: all 0.4s ease;
+}
+#game #game-container .char-card.correct {
+  background: rgba(46, 125, 50, 0.2);
+  border-color: #4CAF50;
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+}
+#game #game-container .char-card.correct .drop-zone {
+  border-color: #4CAF50;
+}
+#game #game-container .char-card.wrong {
+  background: rgba(198, 40, 40, 0.2);
+  border-color: #f44336;
+  box-shadow: 0 0 15px rgba(244, 67, 54, 0.4);
+}
+#game #game-container .char-card.wrong .drop-zone {
+  border-color: #f44336;
 }
 #game #game-container .char-card .char-img {
   height: 340px;

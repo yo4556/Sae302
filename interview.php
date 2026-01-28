@@ -40,7 +40,7 @@ include("autres_pages/menu.php");
                             <p>Stereo-music</p>
                         </div>
                     </div>
-                <span class="duration">3:14</span>
+                <span class="duration">4:58</span>
             </div>
             <div class="accordion-body">
                 <ul>
@@ -61,7 +61,7 @@ include("autres_pages/menu.php");
                         <p>Stereo-music</p>
                     </div>
             </div>
-            <span class="duration">9:12</span>
+            <span class="duration">3:12</span>
         </div>
         <div class="accordion-body">
             <ul>
@@ -90,7 +90,7 @@ include("autres_pages/menu.php");
                     <p>Stereo-music</p>
                 </div>
             </div>
-            <span class="duration">3:47</span>
+            <span class="duration">3:20</span>
         </div>
         <div class="accordion-body">
             <ul>
@@ -112,7 +112,7 @@ include("autres_pages/menu.php");
                     <p>Stereo-music</p>
                 </div>
             </div>
-            <span class="duration">3:47</span>
+            <span class="duration">1:54</span>
         </div>
         <div class="accordion-body">
             <ul>

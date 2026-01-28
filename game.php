@@ -115,27 +115,22 @@ Have fun and discover our favorite music genres !</p>
                 <div class="char-card" data-answer="speed">
                     <div class="char-img2"><img src="img/etan_vous.png"></div>
                     <div class="drop-zone"><span>Déposez ici</span></div>
-                    <div class="explanation">Le Heavy Metal se caractérise par des guitares saturées et des rythmes denses.</div>
                 </div>
                 <div class="char-card" data-answer="metal">
                     <div class="char-img2"><img src="img/hugo_vous.png"></div>
-                    <div class="drop-zone"><span>Déposez ici</span></div>
-                    <div class="explanation">Le Heavy Metal se caractérise par des guitares saturées et des rythmes denses.</div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>       
                 </div>
                 <div class="char-card" data-answer="break">
                     <div class="char-img2"><img src="img/lauren_vous.png"></div>
-                    <div class="drop-zone"><span>Déposez ici</span></div>
-                    <div class="explanation">Le Heavy Metal se caractérise par des guitares saturées et des rythmes denses.</div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>               
                 </div>
                 <div class="char-card" data-answer="emo">
                     <div class="char-img2"><img src="img/enzo_vous.png"></div>
-                    <div class="drop-zone"><span>Déposez ici</span></div>
-                    <div class="explanation">Le Heavy Metal se caractérise par des guitares saturées et des rythmes denses.</div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>        
                 </div>
                 <div class="char-card" data-answer="rap">
                     <div class="char-img2"><img src="img/yoan_vous.png"></div>
-                    <div class="drop-zone"><span>Déposez ici</span></div>
-                    <div class="explanation">Le Heavy Metal se caractérise par des guitares saturées et des rythmes denses.</div>
+                    <div class="drop-zone"><span>Déposez ici</span></div>       
                 </div>
             </div>
         </div>

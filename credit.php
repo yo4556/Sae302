@@ -25,7 +25,7 @@ include("autres_pages/menu.php");
         <img src="img/hugo_vous.png" alt="Hugo Noblot">
     </div>
 
-    <p class="p-us">Made by<br>RICHAND Enzo - LAMOUREUX Lauren - LAURENT Etan - DELOUSTAL Yoan - Noblot Hugo</p>
+    <p class="p-us">Made by<br>RICHAND Enzo - LAMOUREUX Lauren - LAURENT Etan - DELOUSTAL Yoan - NOBLOT Hugo</p>
     <p class="p-us"><a href="biblio.php">Bibliography</a></p>
 
 </main>

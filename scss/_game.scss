@@ -60,7 +60,29 @@
       transition: transform 0.4s ease;
       position: relative;
       display: flex;
-      flex-direction: column;
+      flex-direction: column; // Déjà présent dans votre code
+  transition: all 0.4s ease;
+  &.correct {
+    background: rgba(46, 125, 50, 0.2); // Fond vert transparent
+    border-color: #4CAF50; // Bordure verte
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+
+    .drop-zone {
+      border-color: #4CAF50;
+    }
+  }
+
+  // État si la réponse est fausse
+  &.wrong {
+    background: rgba(198, 40, 40, 0.2); // Fond rouge transparent
+    border-color: #f44336; // Bordure rouge
+    box-shadow: 0 0 15px rgba(244, 67, 54, 0.4);
+
+    .drop-zone {
+      border-color: #f44336;
+    }
+  }
+
 
       .char-img {
         height: 340px;
